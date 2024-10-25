@@ -1,0 +1,11 @@
+﻿.wrapper {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto; 
+     
+   
+}
+@media (min-width:1320px) {
+    .wrapper {
+        grid-template-rows: auto auto 1fr auto;
+    }
+}

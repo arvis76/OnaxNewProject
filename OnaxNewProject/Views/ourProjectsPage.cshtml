@@ -2,79 +2,72 @@
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
 @{
 	Layout = "mainLayout.cshtml";
-	//var tinafoxmainpic = Model.Value("aboutUsImage");
-	//var riviewstars = Model.Value<IPublishedContent>("reviewsStarsImg");
-	//var kevingardnermainpic = Model.Value<IPublishedContent>("reviewsMainImage");
-	//var brandonminipic = Model.Value<IPublishedContent>("ourExpertsOneImg");
-	//var ajcarterminipic = Model.Value<IPublishedContent>("ourExpertsTwoImg");
-	//var aaroncarterminipic = Model.Value<IPublishedContent>("ourExpertsThreeImg");
-	//var tinafoxminipic = Model.Value<IPublishedContent>("ourExpertsFourImg");
-	//var brandonkerrminipic = Model.Value<IPublishedContent>("ourExpertsFiveImg");
-	//var mirandadminipic = Model.Value<IPublishedContent>("ourExpertsSixImg");
-	//var kevingardnerminipic = Model.Value<IPublishedContent>("ourExpertsSevenImg");
+	var annualrep1img = Model.Value<IPublishedContent>("ourProjectsImage1");
+	var annualrep1dateimg = Model.Value<IPublishedContent>("ourProjectsImage1Date");
+	var businessins1img = Model.Value<IPublishedContent>("ourProjectsImage2");
+	var businessinsdate1img = Model.Value<IPublishedContent>("ourProjectsImage2Date");
+	var finaceadvimg = Model.Value<IPublishedContent>("ourProjectsImage3");
+	var finaceadvdateimg = Model.Value<IPublishedContent>("ourProjectsImage3Date");
+	var budgetplanimg = Model.Value<IPublishedContent>("ourProjectsImage4");
+	var budgetplandateimg = Model.Value<IPublishedContent>("ourProjectsImage4Date");
 }
 
 <div class="topmenu">
-	<h1>@Model.Value("aboutUsHeadline")</h1>
+	<h1>@Model.Value("pageTitle")</h1>
 </div>
+<section class="ourproject-headpage">
+	<div class="container">
+		<div class="ourproject-content">
+			<div class="annaulrpt">
+				
+			<img class="finance-image" src="@annualrep1img?.Url()" alt="Finance image">
+			<h3>@Model.Value("ourProjectsImage1Headline")</h3>
+			<img class="date-image" src="@annualrep1dateimg?.Url()" alt="Date">
+			<p>@Model.Value("ourProjectsImage1Text")</p>
+			<a href="/projectsdetail">@Model.Value("ourProjectsImage1ButtonText")</a>
+			</div>
+			<div class="bsninsigt">
+			<img class="finance-image" src="@businessins1img?.Url()" alt="Finance image">
+			<h3>@Model.Value("ourProjectsImage2Headline")</h3>
+			<img class="date-image" src="@businessinsdate1img?.Url()" alt="Date">
+			<p>@Model.Value("ourProjectsImage2Text")</p>
+			<a href="/projectsdetail">@Model.Value("ourProjectsImage1ButtonText")</a>
+			</div>
+			<div class="finceadv">
+			<img class="finance-image" src="@finaceadvimg?.Url()" alt="Finance image">
+			<h3>@Model.Value("ourProjectsImage3Headline")</h3>
+			<img class="date-image" src="@finaceadvdateimg?.Url()" alt="Date">
+			<p>@Model.Value("ourProjectsImage3Text")</p>
+			<a href="/projectsdetail">@Model.Value("ourProjectsImage1ButtonText")</a>
+			</div>
+			<div class="bdgplan">
+			<img class="budgetplan-image" src="@budgetplanimg?.Url()" alt="Budgetplan image">
+			<h3>@Model.Value("ourProjectsImage4Headline")</h3>
+			<img class="budgetplan-image" src="@budgetplandateimg?.Url()" alt="Budgetplan image">
+			<p>@Model.Value("ourProjectsImage4Text")</p>
+			<a href="/projectsdetail">@Model.Value("ourProjectsImage1ButtonText")</a>
+			</div>
+		</div>
+		<aside>
+			<h3>Tags</h3>
+			@if(Model.HasValue("tags"))
+				{
+ 					var tags = Model.Value<IEnumerable<string>>("tags");
+    				<ul>
+       				 @foreach(var tag in tags)
+        				{
+            				<li>@tag</li>
+        				}
+    				</ul>
+}
+			<form class="howcanwehelp">
+				<h3>How can we help you?</h3>
+				<label>Online support 24/7, we are here to help you</label>
+				<input type="text" placeholder="Email address ">
+				<i class="fa-regular fa-envelope"></i>
+			</form>
+		</aside>
+	</div>
 
-<section class="aboutusmainpage">
-	<div class="container">
-		<div class="aboutusmainpage-content">
-			<img class="tinafoxmainimage" src="" alt="Tina Fox">
-			<p>@Model.Value("aboutUsUndertext")</p>
-			<div class="aboutasidetext">
-				<blockquote class="aboutusqoute">@Model.Value("aboutUsQuote")</blockquote>
-				<p>@Model.Value("aboutUsDescription")</p>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="aboutustrustsection">
-	<div class="container">
-		<div class="aboutustrustsection-content">
-			<h5>@Model.Value("reviewsTitle")</h5>
-			<h2>@Model.Value("reviewsHeadline")</h2>
-			<p class="reviewtext">@Model.Value("reviewsDescrption")</p>
-			<img class="reviewstars" src="" alt="5 starts review">
-			<p>@Model.Value("reviewsName")</p>
-			<aside class="reviewsmainimg">
-				<img class="kevingardnermainimg" src="" alt="">
-			</aside>
-		</div>
-	</div>
-</section>
-<section class="aboutusourexpertsection">
-	<div class="container">
-		<div class="aboutusourexpertsection-content">
-			<h5>@Model.Value("ourExpertsTitle")</h5>
-			<h2>@Model.Value("ourExpertsHeadline")</h2>
-			<div class="aboutusourexpertsectionimages1">
-				<img class="brandonnpic" src="" alt="Brandon Newton">
-				<h5>@Model.Value("ourExpertsOneName")</h5>
-				<p>@Model.Value("ourExpertsOneTitle")</p>
-				<img class="ajcarterpic" src="" alt="AJ Carter">
-				<h5>@Model.Value("ourExpertsTwoName")</h5>
-				<p>@Model.Value("ourExpertsTwoTitle")</p>
-				<img class="aaronlambertpic" src="@aaroncarterminipic?.Url()" alt="Aaron Lambert">
-				<h5>@Model.Value("ourExpertsThreeName")</h5>
-				<p>@Model.Value("ourExpertsThreeTitle")</p>
-			</div>
-			<div class="aboutusourexpertsectionimages2">
-				<img class="tinafoxpic" src="@tinafoxminipic?.Url()" alt="Tina Fox">
-				<h5>@Model.Value("ourExpertsFourName")</h5>
-				<p>@Model.Value("ourExpertsFourTitle")</p>
-				<img class="brandonkerrpic" src="@brandonkerrminipic?.Url()" alt="Brandon Kerr">
-				<h5>@Model.Value("ourExpertsFiveName")</h5>
-				<p>@Model.Value("ourExpertsFiveTitle")</p>
-				<img class="mirandadpic" src="@mirandadminipic?.Url()" alt="Miranda Dayton">
-				<h5>@Model.Value("ourExpertsSixName")</h5>
-				<p>@Model.Value("ourExpertsSixTitle")</p>
-				<img class="kevingardnerpic" src="@kevingardnerminipic?.Url()" alt="Kevin Gardner">
-				<h5>@Model.Value("ourExpertsSevenName")</h5>
-				<p>@Model.Value("ourExpertsSevenTitle")</p>
-			</div>
-		</div>
-	</div>
 </section>
 <section>@await Html.PartialAsync("letusknowpartialview")</section>

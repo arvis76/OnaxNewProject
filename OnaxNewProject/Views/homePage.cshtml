@@ -2,4 +2,152 @@
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
 @{
 	Layout = "mainLayout.cshtml";
+
+	var heroimage = Model.Value<IPublishedContent>("heroImage");
+	var aboutussignimg = Model.Value<IPublishedContent>("aboutUsImageSign");
+	var successtoryimage = Model.Value<IPublishedContent>("successStoriesHeadImage");
+	var trustedstoryimage = Model.Value<IPublishedContent>("trustedStoryBackgroundImg");
+	var riskmanagermimg = Model.Value<IPublishedContent>("ourServiceSectionImage1");
+	var bondsmimg = Model.Value<IPublishedContent>("ourServiceSectionImage2");
+	var assurancemimg = Model.Value<IPublishedContent>("ourServiceSectionImage3");
+	var taxmimg = Model.Value<IPublishedContent>("ourServiceSectionImage4");
+	var financialmimg = Model.Value<IPublishedContent>("ourServiceSectionImage5");
+	var statisticmimg = Model.Value<IPublishedContent>("ourServiceSectionImage6");
+
+	var annualreportmain = Model.Value<IPublishedContent>("ourProjectSectionImageslider1");
+	var buisnessreportmain = Model.Value<IPublishedContent>("ourProjectSectionBusinessImage");
+	var financialreportmain = Model.Value<IPublishedContent>("ourProjectSectionFinacialImage");
+	var budgetreportmain = Model.Value<IPublishedContent>("ourProjectSectionBudgetImage");
+
+	var brands1 = Model.Value<IPublishedContent>("freedomImg");
+	var brands2 = Model.Value<IPublishedContent>("identImg");
+	var brands3 = Model.Value<IPublishedContent>("naturalImg");
+	var brands4 = Model.Value<IPublishedContent>("simpleleafimg");
+	var brands5 = Model.Value<IPublishedContent>("globeImg");
+	var brands6 = Model.Value<IPublishedContent>("fossilImg");
 }
+
+<section class="herosection">
+	<div class="container">
+		<div class="herocontent">
+			<h1>@Model.Value("heroHeadline")</h1>
+			<p>@Model.Value("heroText")</p>
+			<button class="btn">Contact us</button>
+			<img src="@heroimage?.Url()" >
+		</div>
+	</div>
+
+</section>
+<section class="mainaboutussection">
+	<div class="container">
+		<div class="mainaboutuscontent">
+			<h3>@Model.Value("aboutUsTitle")</h3>
+			<h2>@Model.Value("aboutUsHeadline")</h2>
+			<blockquote>@Model.Value("aboutUsQuote")</blockquote>
+			<p>@Model.Value("aboutUsText")</p>
+			<img src="@aboutussignimg?.Url()" class="">
+			<p>@Model.Value("aboutUsSingature")</p>
+			<form>
+				
+			</form>
+		</div>
+	</div>
+</section>
+<section class="mainourservicesection">
+	<div class="container">
+		<div class="mainourservicecontent">
+			<div class="successheadline">
+				<h3>@Model.Value("ourServiceSectionTitle")</h3>
+				<h1>@Model.Value("ourServiceSectionHeadline")</h1>
+			</div>
+			<h3>@Model.Value("ourServiceSectionHeadline1")</h3>
+			<img class="riskmanagment-image" src="@riskmanagermimg?.Url()" alt="Riskmanagmnet">
+			<p>@Model.Value("ourServiceSectionHeadline1Text")</p>
+
+			<h3>@Model.Value("ourServiceSectionHeadline2")</h3>
+			<img class="servicebond-image" src="@bondsmimg?.Url()" alt="Bonds">
+			<p>@Model.Value("ourServiceSectionHeadline2Text")</p>
+
+			<h3>@Model.Value("ourServiceSectionHeadline3")</h3>
+			<img class="assurance-image" src="@assurancemimg?.Url()" alt="Assurance">
+			<p>@Model.Value("ourServiceSectionHeadline3Text")</p>
+
+			<h3>@Model.Value("ourServiceSectionHeadline4")</h3>
+			<img class="servicetax-image" src="@taxmimg?.Url()" alt="Tax">
+			<p>@Model.Value("ourServiceSectionHeadline4Text")</p>
+
+			<h3>@Model.Value("ourServiceSectionHeadline5")</h3>
+			<img class="servicefinacial-image" src="@financialmimg?.Url()" alt="Finance">
+			<p>@Model.Value("ourServiceSectionHeadline5Text")</p>
+
+			<h3>@Model.Value("ourServiceSectionHeadline6")</h3>
+			<img class="servicestatic-image" src="@statisticmimg?.Url()" alt="Statistic">
+			<p>@Model.Value("ourServiceSectionHeadline6Text")</p>
+		</div>
+	</div>
+</section>
+<section class="maintrustedsection">
+	<div class="container">
+		<div class="maintrustedcontent">
+			<h1>@Model.Value("trustedStoryHeadline")</h1>
+			<p>@Model.Value("trustedStoryText")</p>
+			<button class="btn">@Model.Value("trustedStoryButtonText")</button>
+			<img src="@trustedstoryimage?.Url()" class="">
+		</div>
+	</div>
+</section>
+<section class="mainsuccesstroysection">
+	<div class="container">
+		<div class="mainsuccesstroycontent">
+			<h3>@Model.Value("successStoriesTitle")</h3>
+			<h2>@Model.Value("successStoriesHeadline")</h2>
+			<div class="customerservsection">
+				<h3>@Model.Value("successStoriesCustomersNumber")</h3>
+				<p>@Model.Value("successStoriesCustomersText")</p>
+			</div>
+			<div class="customerservsection">
+				<h3>@Model.Value("successStoriesProjectNumber")</h3>
+				<p>@Model.Value("successStoriesProjectText")</p>
+			</div>
+			<div class="customerservsection">
+				<h3>@Model.Value("successStoriesBranschesNumber")</h3>
+				<p>@Model.Value("successStoriesBranschesText")</p>
+			</div>
+			<img src="@successtoryimage?.Url()" class="">
+		</div>
+	</div>
+</section>
+<section class="mainrecentprojectsection">
+	<div class="container">
+		<div class="recentprojectcontent">
+			<h3>@Model.Value("ourProjectSectionTitle")</h3>
+			<h1>@Model.Value("ourProjectSectionHeadline")</h1>
+			<div class="recentprojectscontrols">
+				<img src="@annualreportmain?.Url()" class="">
+				<h6>@Model.Value("ourProjectSectionAnnualreportTitle")</h6>
+				<p>@Model.Value("ourProjectSectionAnnualreportTxt")</p>
+				<img src="@buisnessreportmain?.Url()" class="">
+				<h6>@Model.Value("ourProjectSectionBuisnessTitle")</h6>
+				<p>@Model.Value("ourProjectSectionBusinessTxt")</p>
+				<img src="@financialreportmain?.Url()" class="">
+				<h6>@Model.Value("ourProjectSectionFinacialTitle")</h6>
+				<p>@Model.Value("ourProjectSectionFinacialTxt")</p>
+				<img src="@budgetreportmain?.Url()" class="">
+				<h6>@Model.Value("ourProjectSectionBudgetTitle")</h6>
+				<p>@Model.Value("ourProjectSectionBudgetTxt")</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="brands">
+		<div class="container">
+		<div class="brands-content">
+		<img class="freedom-image" src="@brands1?.Url()" alt="Freedom">
+		<img class="identity-image" src="@brands2?.Url()" alt="Identity">
+		<img class="natural-image" src="@brands3?.Url()" alt="Natural">
+		<img class="simpleleaf-image" src="@brands4?.Url()" alt="Simpleleaf">
+		<img class="globe-image" src="@brands5?.Url()" alt="Globe">
+		<img class="fossil-image" src="@brands6?.Url()" alt="Fossil">
+		</div>
+		</div>
+</section>

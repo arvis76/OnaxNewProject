@@ -2,4 +2,45 @@
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
 @{
 	Layout = "mainLayout.cshtml";
+	var riskmanagermimg = Model.Value<IPublishedContent>("ourServicePageImage1");
+	var bondsmimg = Model.Value<IPublishedContent>("ourServicePageImage2");
+	var assurancemimg = Model.Value<IPublishedContent>("ourServicePageImage3");
+	var taxmimg = Model.Value<IPublishedContent>("ourServicePageImage4");
+	var financialmimg = Model.Value<IPublishedContent>("ourServicePageImage5");
+	var statisticmimg = Model.Value<IPublishedContent>("ourServicePageImage6");
 }
+
+<div class="topmenu">
+	<h1>@Model.Value("ourServiceHeadaline")</h1>
+</div>
+<section class="ourservicemainpage">
+	<div class="container">
+		<div class="ourservicemain-content">
+			<h3>@Model.Value("ourServicePageImageHeadline1")</h3>
+			<img class="riskmanagment-image" src="@riskmanagermimg?.Url()" alt="Riskmanagmnet">
+			<p>@Model.Value("ourServicePageImage1Text")</p>
+
+			<h3>@Model.Value("ourServicePageImage2Headline")</h3>
+			<img class="servicebond-image" src="@bondsmimg?.Url()" alt="Bonds">
+			<p>@Model.Value("ourServicePageImage2Text")</p>
+
+			<h3>@Model.Value("ourServicePageImage3Headline")</h3>
+			<img class="assurance-image" src="@assurancemimg?.Url()" alt="Assurance">
+			<p>@Model.Value("ourServicePageImage3Text")</p>
+
+			<h3>@Model.Value("ourServicePageImage4Headline")</h3>
+			<img class="servicetax-image" src="@taxmimg?.Url()" alt="Tax">
+			<p>@Model.Value("ourServicePageImage4Text")</p>
+
+			<h3>@Model.Value("ourServicePageImage5Headline")</h3>
+			<img class="servicefinacial-image" src="@financialmimg?.Url()" alt="Finance">
+			<p>@Model.Value("ourServicePageImage5Text")</p>
+
+			<h3>@Model.Value("ourServicePageImage6Headline")</h3>
+			<img class="servicestatic-image" src="@statisticmimg?.Url()" alt="Statistic">
+			<p>@Model.Value("ourServicePageImage6Text")</p>
+			
+		</div>
+	</div>
+</section>
+<section>@await Html.PartialAsync("letusknowpartialview")</section>

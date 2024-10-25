@@ -2,4 +2,47 @@
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
 @{
 	Layout = "mainLayout.cshtml";
+	var mapimage = Model.Value<IPublishedContent>("contactMaps");
+	var freedomimg = Model.Value<IPublishedContent>("contactBrandsImage1");
+	var identimg = Model.Value<IPublishedContent>("contactBrandsImage2");
+	var naturalimg = Model.Value<IPublishedContent>("contactBrandsImage3");
+	var simpleimg = Model.Value<IPublishedContent>("contactBrandsImage4");
+	var globeimg = Model.Value<IPublishedContent>("contactBrandsImage5");
+	var fossilimg = Model.Value<IPublishedContent>("contactBrandsImage6");
+		
 }
+<div class="topmenu">
+	<h1>@Model.Value("contactHeadline")</h1>
+	
+</div>
+<section>@await Html.PartialAsync("letusknowpartialview")</section>
+<section class="contactpage">
+	<div class="container">
+		<div class="contactpage-content">
+			<img class="mapsimage" src="@mapimage?.Url()" alt="Map image">
+			<form class="requstcallback">
+				<h3>Request a call back</h3>
+				<h2>Let us know about your next project</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur, ligula semper sagittis lobortis, eros metus efficitur purus</p>
+				<input type="text" placeholder="Name">
+				<input type="text" placeholder="Phone">
+				<input type="email" placeholder="Email address">
+				<input type="text" placeholder="Name">
+				<button type="submit">Submit</button>
+
+			</form>
+		</div>
+	</div>
+</section>
+	<section class="brands">
+		<div class="container">
+		<div class="brands-content">
+		<img class="freedom-image" src="@freedomimg?.Url()" alt="Freedom">
+		<img class="identity-image" src="@identimg?.Url()" alt="Identity">
+		<img class="natural-image" src="@naturalimg?.Url()" alt="Natural">
+		<img class="simpleleaf-image" src="@simpleimg?.Url()" alt="Simpleleaf">
+		<img class="globe-image" src="@globeimg?.Url()" alt="Globe">
+		<img class="fossil-image" src="@fossilimg?.Url()" alt="Fossil">
+		</div>
+		</div>
+</section>

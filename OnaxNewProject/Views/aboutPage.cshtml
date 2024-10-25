@@ -2,4 +2,80 @@
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
 @{
 	Layout = "mainLayout.cshtml";
+	var tinafoxmainimage = Model.Value<IPublishedContent>("aboutUsImageTinaFox");
+	var reviewstars = Model.Value<IPublishedContent>("trustedStars");
+	var kevingardnermainpic = Model.Value<IPublishedContent>("trustedImage");
+	var brandonminipic = Model.Value<IPublishedContent>("ourExpertsImage1");
+	var ajcarterminipic = Model.Value<IPublishedContent>("ourExpertsImage2");
+	var aaroncarterminipic = Model.Value<IPublishedContent>("ourExpertsImage3");
+	var tinafoxminipic = Model.Value<IPublishedContent>("ourExpertsImage4");
+	var brandonkerrminipic = Model.Value<IPublishedContent>("ourExpertsImage5");
+	var mirandadminipic = Model.Value<IPublishedContent>("ourExpertsImage6");
+	var kevingardnerminipic = Model.Value<IPublishedContent>("ourExpertsImage7");
 }
+
+<div class="topmenu">
+	<h1>@Model.Value("aboutUsHeadline")</h1>
+</div>
+
+<section class="aboutusmainpage">
+	<div class="container">
+		<div class="aboutusmainpage-content">
+			<img class="tinafoxmainimage" src="@tinafoxmainimage?.Url()" alt="Tina Fox">
+			<p>@Model.Value("aboutUsUnderText")</p>
+			<div class="aboutasidetext">
+				<blockquote class="aboutusqoute">@Model.Value("aboutUsQuote")</blockquote>
+				<p>@Model.Value("aboutUsText")</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="aboutustrustsection">
+	<div class="container">
+		<div class="aboutustrustsection-content">
+			<h5>@Model.Value("trustedTitle")</h5>
+			<h2>@Model.Value("trustedHeadline")</h2>
+			<p class="reviewtext">@Model.Value("trustedText")</p>
+			<img class="reviewstars" src="@reviewstars?.Url()" alt="5 starts review">
+			<p>@Model.Value("trustedName")</p>
+			<h6>@Model.Value("trustedCompany")</h6>
+			<aside class="reviewsmainimg">
+				<img class="kevingardnermainimg" src="@kevingardnermainpic?.Url()" alt="">
+			</aside>
+		</div>
+	</div>
+</section>
+<section class="aboutusourexpertsection">
+	<div class="container">
+		<div class="aboutusourexpertsection-content">
+			<h5>@Model.Value("ourExpertsTitle")</h5>
+			<h2>@Model.Value("ourExpertsHeadline")</h2>
+			<div class="aboutusourexpertsectionimages1">
+				<img class="brandonnpic" src="@brandonkerrminipic?.Url()" alt="Brandon Newton">
+				<h5>@Model.Value("ourExpertsName1")</h5>
+				<p>("@Model.Value("ourExpertsCompanyTitle")</p>
+				<img class="ajcarterpic" src="@ajcarterminipic?.Url()" alt="AJ Carter">
+				<h5>@Model.Value("ourExpertsName2")</h5>
+				<p>@Model.Value("ourExpertsCompanyTitle2")</p>
+				<img class="aaronlambertpic" src="@aaroncarterminipic?.Url()" alt="Aaron Lambert">
+				<h5>@Model.Value("ourExpertsName3")</h5>
+				<p>@Model.Value("ourExpertsCompanyTitle3")</p>
+			</div>
+			<div class="aboutusourexpertsectionimages2">
+				<img class="tinafoxpic" src="@tinafoxminipic?.Url()" alt="Tina Fox">
+				<h5>@Model.Value("ourExpertsName4")</h5>
+				<p>@Model.Value("ourExpertsCompanyTitle4")</p>
+				<img class="brandonkerrpic" src="@brandonkerrminipic?.Url()" alt="Brandon Kerr">
+				<h5>@Model.Value("ourExpertsName5")</h5>
+				<p>@Model.Value("ourExpertsCompanyTitle5")</p>
+				<img class="mirandadpic" src="@mirandadminipic?.Url()" alt="Miranda Dayton">
+				<h5>@Model.Value("ourExpertsName6")</h5>
+				<p>@Model.Value("ourExpertsCompanyTitle6")</p>
+				<img class="kevingardnerpic" src="@kevingardnerminipic?.Url()" alt="Kevin Gardner">
+				<h5>@Model.Value("ourExpertsName7")</h5>
+				<p>@Model.Value("ourExpertsCompanyTitle7")</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section>@await Html.PartialAsync("letusknowpartialview")</section>
