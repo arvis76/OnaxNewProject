@@ -1,6 +1,48 @@
 ﻿.topbar {
-    .container{
-        display:flex;
 
+    .container {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        margin-bottom: 20px;
+
+
+
+        .addressinfo {
+            color: white;
+            margin-left: 200px;
+        }
+
+        .socialmedia {
+            margin-left: 800px;
+
+            .fa-brands {
+                margin-left: 50px;
+            }
+        }
     }
- }
+}
+.navbar {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 20px;
+
+
+    .btn {
+        gap: 20px;
+        margin-left: 200px;
+
+        .nav-link {
+            margin-left: 100px;
+        }
+    }
+
+    .logo {
+        margin-left: 200px;
+    }
+}

@@ -12,40 +12,41 @@
 	var budgetplandateimg = Model.Value<IPublishedContent>("ourProjectsImage4Date");
 }
 
-<div class="topmenu">
+<div class="topmenu bg-gray">
 	<h1>@Model.Value("pageTitle")</h1>
 </div>
 <section class="ourproject-headpage">
 	<div class="container">
 		<div class="ourproject-content">
-			<div class="annaulrpt">
-				
-			<img class="finance-image" src="@annualrep1img?.Url()" alt="Finance image">
-			<h3>@Model.Value("ourProjectsImage1Headline")</h3>
-			<img class="date-image" src="@annualrep1dateimg?.Url()" alt="Date">
-			<p>@Model.Value("ourProjectsImage1Text")</p>
-			<a href="/projectsdetail">@Model.Value("ourProjectsImage1ButtonText")</a>
+			<div class="allimgrpt">
+			<div class="annulrpt">
+				<img class="finance-image" src="@annualrep1img?.Url()" alt="Finance image">
+				<h3>@Model.Value("ourProjectsImage1Headline")</h3>
+				<img class="date-image" src="@annualrep1dateimg?.Url()" alt="Date">
+				<p>@Model.Value("ourProjectsImage1Text")</p>
+					<a href="/our-project-details">@Model.Value("ourProjectsImage1ButtonText")</a>
 			</div>
 			<div class="bsninsigt">
-			<img class="finance-image" src="@businessins1img?.Url()" alt="Finance image">
-			<h3>@Model.Value("ourProjectsImage2Headline")</h3>
-			<img class="date-image" src="@businessinsdate1img?.Url()" alt="Date">
-			<p>@Model.Value("ourProjectsImage2Text")</p>
-			<a href="/projectsdetail">@Model.Value("ourProjectsImage1ButtonText")</a>
+				<img class="finance-image" src="@businessins1img?.Url()" alt="Finance image">
+				<h3>@Model.Value("ourProjectsImage2Headline")</h3>
+				<img class="date-image" src="@businessinsdate1img?.Url()" alt="Date">
+				<p>@Model.Value("ourProjectsImage2Text")</p>
+					<a href="/our-project-details">@Model.Value("ourProjectsImage1ButtonText")</a>
 			</div>
 			<div class="finceadv">
-			<img class="finance-image" src="@finaceadvimg?.Url()" alt="Finance image">
-			<h3>@Model.Value("ourProjectsImage3Headline")</h3>
-			<img class="date-image" src="@finaceadvdateimg?.Url()" alt="Date">
-			<p>@Model.Value("ourProjectsImage3Text")</p>
-			<a href="/projectsdetail">@Model.Value("ourProjectsImage1ButtonText")</a>
+				<img class="finance-image" src="@finaceadvimg?.Url()" alt="Finance image">
+				<h3>@Model.Value("ourProjectsImage3Headline")</h3>
+				<img class="date-image" src="@finaceadvdateimg?.Url()" alt="Date">
+				<p>@Model.Value("ourProjectsImage3Text")</p>
+					<a href="/our-project-details">@Model.Value("ourProjectsImage1ButtonText")</a>
 			</div>
 			<div class="bdgplan">
-			<img class="budgetplan-image" src="@budgetplanimg?.Url()" alt="Budgetplan image">
-			<h3>@Model.Value("ourProjectsImage4Headline")</h3>
-			<img class="budgetplan-image" src="@budgetplandateimg?.Url()" alt="Budgetplan image">
-			<p>@Model.Value("ourProjectsImage4Text")</p>
-			<a href="/projectsdetail">@Model.Value("ourProjectsImage1ButtonText")</a>
+				<img class="budgetplan-image" src="@budgetplanimg?.Url()" alt="Budgetplan image">
+				<h3>@Model.Value("ourProjectsImage4Headline")</h3>
+				<img class="budgetplan-image" src="@budgetplandateimg?.Url()" alt="Budgetplan image">
+				<p>@Model.Value("ourProjectsImage4Text")</p>
+					<a href="/our-project-details">@Model.Value("ourProjectsImage1ButtonText")</a>
+			</div>
 			</div>
 		</div>
 		<aside>

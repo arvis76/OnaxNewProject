@@ -19,6 +19,8 @@
 	var financialreportmain = Model.Value<IPublishedContent>("ourProjectSectionFinacialImage");
 	var budgetreportmain = Model.Value<IPublishedContent>("ourProjectSectionBudgetImage");
 
+	var dotmap2 = Model.Value<IPublishedContent>("dotMap2");
+	var dotmap = Model.Value<IPublishedContent>("trustedStoryBackgroundWorldImg");
 	var brands1 = Model.Value<IPublishedContent>("freedomImg");
 	var brands2 = Model.Value<IPublishedContent>("identImg");
 	var brands3 = Model.Value<IPublishedContent>("naturalImg");
@@ -30,111 +32,162 @@
 <section class="herosection">
 	<div class="container">
 		<div class="herocontent">
-			<h1>@Model.Value("heroHeadline")</h1>
+			<h2>@Model.Value("heroHeadline")</h2>
 			<p>@Model.Value("heroText")</p>
-			<button class="btn">Contact us</button>
-			<img src="@heroimage?.Url()" >
+			<button class="btn bg-primary">Contact us</button>
 		</div>
+		<img src="@heroimage?.Url()" class="heroimg" >
 	</div>
 
 </section>
 <section class="mainaboutussection">
 	<div class="container">
 		<div class="mainaboutuscontent">
-			<h3>@Model.Value("aboutUsTitle")</h3>
+			<h6>@Model.Value("aboutUsTitle")</h6>
 			<h2>@Model.Value("aboutUsHeadline")</h2>
 			<blockquote>@Model.Value("aboutUsQuote")</blockquote>
 			<p>@Model.Value("aboutUsText")</p>
 			<img src="@aboutussignimg?.Url()" class="">
 			<p>@Model.Value("aboutUsSingature")</p>
-			<form>
+		</div>
+		<aside class="inputformabout">
+			<form class="requstcallback">
+				<div class="rqsnew bg-rqst">
+				<h3>Request a call back</h3>
+				</div>
+				<div class="formtext">
+					<p>Dolor in reprehenderit in voluptate velit esse cillum dolore eu<br> 
+					fugiat nulla pariatur excepteur sint occaecat</p>
+				</div>
+				<input class="inputform" placeholder="Name">
+				<input class="inputform" placeholder="Email address">
+				<input class="inputform" placeholder="Phone">
+				<button class="btn-signin btn bg-accent">Submit</button>
 				
 			</form>
-		</div>
+		</aside>
 	</div>
 </section>
 <section class="mainourservicesection">
-	<div class="container">
+	<div class="container bg-gray">
 		<div class="mainourservicecontent">
 			<div class="successheadline">
-				<h3>@Model.Value("ourServiceSectionTitle")</h3>
-				<h1>@Model.Value("ourServiceSectionHeadline")</h1>
+				<h6>@Model.Value("ourServiceSectionTitle")</h6>
+				<h2>@Model.Value("ourServiceSectionHeadline")</h2>
 			</div>
-			<h3>@Model.Value("ourServiceSectionHeadline1")</h3>
-			<img class="riskmanagment-image" src="@riskmanagermimg?.Url()" alt="Riskmanagmnet">
-			<p>@Model.Value("ourServiceSectionHeadline1Text")</p>
-
-			<h3>@Model.Value("ourServiceSectionHeadline2")</h3>
-			<img class="servicebond-image" src="@bondsmimg?.Url()" alt="Bonds">
-			<p>@Model.Value("ourServiceSectionHeadline2Text")</p>
-
-			<h3>@Model.Value("ourServiceSectionHeadline3")</h3>
-			<img class="assurance-image" src="@assurancemimg?.Url()" alt="Assurance">
-			<p>@Model.Value("ourServiceSectionHeadline3Text")</p>
-
-			<h3>@Model.Value("ourServiceSectionHeadline4")</h3>
-			<img class="servicetax-image" src="@taxmimg?.Url()" alt="Tax">
-			<p>@Model.Value("ourServiceSectionHeadline4Text")</p>
-
-			<h3>@Model.Value("ourServiceSectionHeadline5")</h3>
-			<img class="servicefinacial-image" src="@financialmimg?.Url()" alt="Finance">
-			<p>@Model.Value("ourServiceSectionHeadline5Text")</p>
-
-			<h3>@Model.Value("ourServiceSectionHeadline6")</h3>
-			<img class="servicestatic-image" src="@statisticmimg?.Url()" alt="Statistic">
-			<p>@Model.Value("ourServiceSectionHeadline6Text")</p>
+			<div class="servicesectionfirts">
+				<div class="service1 bg-light">
+					<h3>@Model.Value("ourServiceSectionHeadline1")</h3>
+					<img class="riskmanagment-image" src="@riskmanagermimg?.Url()" alt="Riskmanagmnet">
+					<p>@Model.Value("ourServiceSectionHeadline1Text")</p>
+				</div>
+				<div class="service2 bg-light">
+					<h3>@Model.Value("ourServiceSectionHeadline2")</h3>
+					<img class="servicebond-image" src="@bondsmimg?.Url()" alt="Bonds">
+					<p>@Model.Value("ourServiceSectionHeadline2Text")</p>
+				</div>
+				<div class="service3 bg-light">
+					<h3>@Model.Value("ourServiceSectionHeadline3")</h3>
+					<img class="assurance-image" src="@assurancemimg?.Url()" alt="Assurance">
+					<p>@Model.Value("ourServiceSectionHeadline3Text")</p>
+				</div>
+			</div>
+				<div class="servicesectionsecond">
+					<div class="service4 bg-light">
+						<h3>@Model.Value("ourServiceSectionHeadline4")</h3>
+						<img class="servicetax-image" src="@taxmimg?.Url()" alt="Tax">
+						<p>@Model.Value("ourServiceSectionHeadline4Text")</p>
+					</div>
+					<div class="service5 bg-light">
+						<h3>@Model.Value("ourServiceSectionHeadline5")</h3>
+						<img class="servicefinacial-image" src="@financialmimg?.Url()" alt="Finance">
+						<p>@Model.Value("ourServiceSectionHeadline5Text")</p>
+					</div>
+					<div class="service6 bg-light">
+						<h3>@Model.Value("ourServiceSectionHeadline6")</h3>
+						<img class="servicestatic-image" src="@statisticmimg?.Url()" alt="Statistic">
+						<p>@Model.Value("ourServiceSectionHeadline6Text")</p>
+					</div>
+				</div>
+			
 		</div>
 	</div>
 </section>
 <section class="maintrustedsection">
 	<div class="container">
 		<div class="maintrustedcontent">
-			<h1>@Model.Value("trustedStoryHeadline")</h1>
+			
+			<div class="trustnew">
+			<h2>@Model.Value("trustedStoryHeadline")</h2>
+			<h2>@Model.Value("trustedStoryClientText")</h2>
 			<p>@Model.Value("trustedStoryText")</p>
 			<button class="btn">@Model.Value("trustedStoryButtonText")</button>
+			</div>
+			<img src="@dotmap?.Url()" class="">
 			<img src="@trustedstoryimage?.Url()" class="">
 		</div>
 	</div>
 </section>
 <section class="mainsuccesstroysection">
 	<div class="container">
-		<div class="mainsuccesstroycontent">
-			<h3>@Model.Value("successStoriesTitle")</h3>
-			<h2>@Model.Value("successStoriesHeadline")</h2>
-			<div class="customerservsection">
+		<div class="mainsuccesstroycontent bg-primary">
+			<div class="overbgsuccesstory">
+				<div class="headlinessuccess">
+					<h6>@Model.Value("successStoriesTitle")</h6>
+					<h2>@Model.Value("successStoriesHeadline")</h2>
+				</div>
+			´<div class="successstorynumbers">
+			<div class="customerservsection1">
 				<h3>@Model.Value("successStoriesCustomersNumber")</h3>
 				<p>@Model.Value("successStoriesCustomersText")</p>
 			</div>
-			<div class="customerservsection">
+			<div class="customerservsection2">
 				<h3>@Model.Value("successStoriesProjectNumber")</h3>
 				<p>@Model.Value("successStoriesProjectText")</p>
 			</div>
-			<div class="customerservsection">
+			<div class="customerservsection3">
 				<h3>@Model.Value("successStoriesBranschesNumber")</h3>
 				<p>@Model.Value("successStoriesBranschesText")</p>
 			</div>
+				</div>
+			<div class="successstoryimage">
 			<img src="@successtoryimage?.Url()" class="">
+			</div>
+			</div>
+			<img src="@dotmap2?.Url()" class="">
 		</div>
 	</div>
 </section>
 <section class="mainrecentprojectsection">
 	<div class="container">
 		<div class="recentprojectcontent">
-			<h3>@Model.Value("ourProjectSectionTitle")</h3>
-			<h1>@Model.Value("ourProjectSectionHeadline")</h1>
+			<h6>@Model.Value("ourProjectSectionTitle")</h6>
+			<h2>@Model.Value("ourProjectSectionHeadline")</h2>
 			<div class="recentprojectscontrols">
+				
 				<img src="@annualreportmain?.Url()" class="">
+				<div class="projectstory1">
 				<h6>@Model.Value("ourProjectSectionAnnualreportTitle")</h6>
 				<p>@Model.Value("ourProjectSectionAnnualreportTxt")</p>
+				</div>
+				
 				<img src="@buisnessreportmain?.Url()" class="">
+				<div class="projectstory2">
 				<h6>@Model.Value("ourProjectSectionBuisnessTitle")</h6>
 				<p>@Model.Value("ourProjectSectionBusinessTxt")</p>
+				</div>
+				
 				<img src="@financialreportmain?.Url()" class="">
+				<div class="projectstory3">
 				<h6>@Model.Value("ourProjectSectionFinacialTitle")</h6>
 				<p>@Model.Value("ourProjectSectionFinacialTxt")</p>
+				</div>
+				
 				<img src="@budgetreportmain?.Url()" class="">
+				<div class="projectstory4">
 				<h6>@Model.Value("ourProjectSectionBudgetTitle")</h6>
 				<p>@Model.Value("ourProjectSectionBudgetTxt")</p>
+				</div>
 			</div>
 		</div>
 	</div>

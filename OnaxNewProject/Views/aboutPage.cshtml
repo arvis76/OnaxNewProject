@@ -14,15 +14,17 @@
 	var kevingardnerminipic = Model.Value<IPublishedContent>("ourExpertsImage7");
 }
 
-<div class="topmenu">
-	<h1>@Model.Value("aboutUsHeadline")</h1>
+<div class="topmenu bg-gray">
+	<h2>@Model.Value("aboutUsHeadline")</h2>
 </div>
 
 <section class="aboutusmainpage">
 	<div class="container">
 		<div class="aboutusmainpage-content">
+			<div class="aboutusnew">
 			<img class="tinafoxmainimage" src="@tinafoxmainimage?.Url()" alt="Tina Fox">
 			<p>@Model.Value("aboutUsUnderText")</p>
+			</div>
 			<div class="aboutasidetext">
 				<blockquote class="aboutusqoute">@Model.Value("aboutUsQuote")</blockquote>
 				<p>@Model.Value("aboutUsText")</p>
@@ -31,14 +33,16 @@
 	</div>
 </section>
 <section class="aboutustrustsection">
-	<div class="container">
+	<div class="container bg-gray">
 		<div class="aboutustrustsection-content">
+		 <div class="trustsectionfirstnew">
 			<h5>@Model.Value("trustedTitle")</h5>
 			<h2>@Model.Value("trustedHeadline")</h2>
 			<p class="reviewtext">@Model.Value("trustedText")</p>
 			<img class="reviewstars" src="@reviewstars?.Url()" alt="5 starts review">
 			<p>@Model.Value("trustedName")</p>
 			<h6>@Model.Value("trustedCompany")</h6>
+			</div>
 			<aside class="reviewsmainimg">
 				<img class="kevingardnermainimg" src="@kevingardnermainpic?.Url()" alt="">
 			</aside>
@@ -51,7 +55,7 @@
 			<h5>@Model.Value("ourExpertsTitle")</h5>
 			<h2>@Model.Value("ourExpertsHeadline")</h2>
 			<div class="aboutusourexpertsectionimages1">
-				<img class="brandonnpic" src="@brandonkerrminipic?.Url()" alt="Brandon Newton">
+				<img class="brandonnpic" src="@brandonminipic?.Url()" alt="Brandon Newton">				
 				<h5>@Model.Value("ourExpertsName1")</h5>
 				<p>("@Model.Value("ourExpertsCompanyTitle")</p>
 				<img class="ajcarterpic" src="@ajcarterminipic?.Url()" alt="AJ Carter">

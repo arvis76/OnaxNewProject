@@ -1,5 +1,47 @@
-﻿.aboutusmainpage{
-    .container{
-        background-color:black;
+﻿
+.topmenu {
+    text-align: center;
+    margin-bottom: 120px;
+    margin-top: 120px;
+}
+
+
+.aboutusmainpage {
+    margin-top:120px;
+    .container {
+        .aboutusmainpage-content {
+            display: flex;
+            margin-left:425px;
+        }
+
+        .aboutasidetext {
+            margin-left: 60px;
+            margin-right: 100px;
+        }
+    }
+}
+.aboutustrustsection {
+    .container {
+        .aboutustrustsection-content{
+            display:flex;
+            margin-left:351px;
+
+        }
+    }
+}
+.aboutusourexpertsection {
+    .container {
+        .aboutusourexpertsection-content {
+
+
+            .aboutusourexpertsectionimages1 {
+                display: flex;
+
+            }
+
+            .aboutusourexpertsectionimages2 {
+                display: flex;
+            }
+        }
     }
 }
