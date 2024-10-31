@@ -1,9 +1,7 @@
 ﻿.topmenu {
-    height: 245px;
-
-    h2 {
-        text-align: center;
-    }
+    text-align: center;
+    margin-bottom: 120px;
+    margin-top: 120px;
 }
 .ourproject-headpage {
     .container {
@@ -12,7 +10,10 @@
         .ourproject-content {
 
             .allimgrpt {
-             
+                display: flex;
+
+                .annulrpt {
+                }
             }
         }
     }

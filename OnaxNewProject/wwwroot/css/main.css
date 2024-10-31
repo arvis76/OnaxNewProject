@@ -210,9 +210,12 @@ button {
   padding-right: 70px; }
 
 .topmenu {
-  height: 245px; }
-  .topmenu h2 {
-    text-align: center; }
+  text-align: center;
+  margin-bottom: 120px;
+  margin-top: 120px; }
+
+.ourproject-headpage .container .ourproject-content .allimgrpt {
+  display: flex; }
 
 .topmenu {
   height: 245px; }
@@ -298,6 +301,15 @@ button {
 
 .letusknow .container .letusknow-content {
   display: flex; }
+
+.topmenu {
+  text-align: center;
+  margin-bottom: 120px;
+  margin-top: 120px;
+  margin-top: 50px; }
+
+.servicedetails-section .container .servicedetails-content {
+  background-color: black; }
 
 @media (prefers-reduced-motion: no-preference) {
   :root {

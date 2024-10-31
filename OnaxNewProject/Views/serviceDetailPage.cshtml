@@ -6,16 +6,22 @@
 	var keypointimg = Model.Value<IPublishedContent>("serviceDetailImage2");
 	var finacialpoint2img = Model.Value<IPublishedContent>("serviceDetailImage3");
 }
-<div class="topmenu">
-	<h1>@Model.Value("serviceDetailHeadline")</h1>
+<div class="topmenu bg-gray">
+	<h2>@Model.Value("serviceDetailHeadline")</h2>
 </div>
 <section class="servicedetails-section">
 	<div class="container">
 		<div class="servicedetails-content">
 			<aside class="servicedetails-aboutus">
-				<h3>@Model.Value("serviceDetailSecondaryHeadline"))</h3>
+				<h3>@Model.Value("serviceDetailSecondaryHeadline")</h3>
 				<img class="riskmanagment-image" src="@riskmanager1img?.Url()" alt="Riskmanagmnet">
 				<p>@Model.Value("serviceDetailImage1Undertext")</p>
+				<form class="howcanwehelp">
+					<h3>How can we help you?</h3>
+					<p>online support 24/7, we are here to<br>help you </p>
+					<input class="inputhelp" placeholder="E-mail address"><i class="fa-regular fa-envelope"></i>
+
+				</form>
 			</aside>
 			<div class="servicedetails-keypoints">
 				<img class="keypoint-image" src="@keypointimg?.Url()" alt="Keypoints">
