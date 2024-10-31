@@ -46,9 +46,7 @@ button {
     text-decoration: none; }
 
 .topmenu {
-  text-align: center;
-  margin-bottom: 120px;
-  margin-top: 120px; }
+  text-align: center; }
 
 .aboutusmainpage {
   margin-top: 120px; }
@@ -214,8 +212,15 @@ button {
   margin-bottom: 120px;
   margin-top: 120px; }
 
-.ourproject-headpage .container .ourproject-content .allimgrpt {
+.topmenu {
+  text-align: center;
+  margin-bottom: 120px;
+  margin-top: 120px; }
+
+.ourproject-headpage .container .ourproject-content {
   display: flex; }
+  .ourproject-headpage .container .ourproject-content .allimgrpt .annulrpt {
+    border: solid 1px black; }
 
 .topmenu {
   height: 245px; }
