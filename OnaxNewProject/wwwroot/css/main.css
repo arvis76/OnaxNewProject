@@ -186,11 +186,8 @@ button {
         margin-right: 100px; }
       .mainsuccesstroysection .container .mainsuccesstroycontent .overbgsuccesstory .successstorynumbers .customerservsection3 {
         margin-right: 100px; }
-      .mainsuccesstroysection .container .mainsuccesstroycontent .overbgsuccesstory .successstorynumbers .successstoryimage {
-        text-align: center;
-        align-items: center;
-        justify-items: center;
-        justify-content: center; }
+    .mainsuccesstroysection .container .mainsuccesstroycontent .overbgsuccesstory .imgsuccessstory {
+      position: absolute; }
 
 .mainrecentprojectsection {
   margin-top: 400px; }
@@ -216,14 +213,56 @@ button {
   text-align: center;
   height: 245px; }
 
+.projectdetailsannualreport {
+  margin-left: 380px;
+  width: 780px; }
+  .projectdetailsannualreport .container .projectdetailscontent {
+    display: flex; }
+
 .topmenu {
   text-align: center;
   height: 245px; }
 
-.ourproject-headpage .container .ourproject-content {
-  display: flex; }
-  .ourproject-headpage .container .ourproject-content .allimgrpt .annulrpt {
-    border: solid 1px black; }
+.ourprojectheadpage .container {
+  margin-left: 375px;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 230px; }
+  .ourprojectheadpage .container .ourprojectcontent .verticalline {
+    border-left: 1px solid lightgray;
+    height: 500px;
+    position: absolute;
+    left: 10%;
+    margin-left: -2px;
+    top: 0; }
+  .ourprojectheadpage .container .ourprojectcontent .annulrpt {
+    display: flex;
+    gap: 30px; }
+    .ourprojectheadpage .container .ourprojectcontent .annulrpt .sideannul {
+      width: 360px;
+      padding-bottom: 20px; }
+  .ourprojectheadpage .container .ourprojectcontent .bsninsigt {
+    display: flex;
+    gap: 30px; }
+    .ourprojectheadpage .container .ourprojectcontent .bsninsigt .sidebsn {
+      width: 360px;
+      padding-bottom: 20px; }
+  .ourprojectheadpage .container .ourprojectcontent .finceadv {
+    display: flex;
+    gap: 30px; }
+    .ourprojectheadpage .container .ourprojectcontent .finceadv .sidefina {
+      width: 360px;
+      padding-bottom: 20px; }
+  .ourprojectheadpage .container .ourprojectcontent .bdgplan {
+    display: flex;
+    gap: 30px; }
+    .ourprojectheadpage .container .ourprojectcontent .bdgplan .sidebdg {
+      width: 360px;
+      padding-bottom: 20px; }
+
+.ourprojectheadpage .howcanwehelp {
+  margin-left: 90px;
+  display: grid; }
 
 .topmenu {
   text-align: center;

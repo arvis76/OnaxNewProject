@@ -19,78 +19,61 @@
 <div class="topmenu bg-gray">
 	<h2>@Model.Value("projectsDetailHeadline")</h2>
 </div>
-<section projectdetails-annualreport>
+<section class="projectdetailsannualreport">
 	<div class="container">
-		<div class="projectdetails-content">
-			<div class="projectdetails-sugforyou">
-				<img class="finance-image" src="@projectdetailsdateimg?.Url()" alt="Finance image">
+		<div class="projectdetailscontent">
+			<div class="projectdetailssugforyou">
+				<img class="financeimage" src="@projectdetailsdateimg?.Url()" alt="Finance image">
 				<p>@Model.Value("projectsDetailHeadline2")</p>
-				<img class="finance-image" src="@projectdetailsfirtsimg?.Url()" alt="Finance image">
+				<img class="financeimage" src="@projectdetailsfirtsimg?.Url()" alt="Finance image">
 				<h3>@Model.Value("projectsDetailImage1Headline")</h3>
 				<p>@Model.Value("projectsDetailImage1Text")</p>
 			</div>
-			<div class="projectdetails-nuncfac">
-				<img class="finance-image" src="@projectdetailssecondimg?.Url()" alt="Finance image">
+			<div class="projectdetailsnuncfac">
+				<img class="financeimage" src="@projectdetailssecondimg?.Url()" alt="Finance image">
 				<h5>@Model.Value("projectsDetailImage2Headline")</h5>
 				<p>@Model.Value("projectsDetailImage2Text")</p>
 			</div>
-			<div class="projectdetails-nullarmblandis">
+			<div class="projectdetailsnullarmblandis">
 				<h5>@Model.Value("projectsDetailImage3OverHeadline")</h5>
 				<p>@Model.Value("projectsDetailImage3OverText")</p>
-				<img class="finance-image" src="@projectdetailsthirdimg?.Url()" alt="Finance image">
+				<img class="financeimage" src="@projectdetailsthirdimg?.Url()" alt="Finance image">
 				<h5>@Model.Value("projectsDetailImage3UnderHeadline")</h5>
 				<p>@Model.Value("projectsDetailImage3Undertext")</p>
 			</div>
-			<div class="projectdetails-tags1">
+			<div class="projectdetailstags1">
 			<h5>Tags: </h5>
-			@if(Model.HasValue("tagsone"))
-				{
- 					var tags1 = Model?.Value<IEnumerable<string>>("tagsone");
-    				<ul>
-       				 @foreach(var tag in tags1)
-        				{
-            				<li>@tag</li>
-        				}
-    				</ul>
-				}
+		
 			</div>
 		</div>
-		<aside>
+		<aside class="asideprdetails">
 			<div class="annaulrpt">
-			<img class="finance-image" src="@annualrep2img?.Url()" alt="Finance image">
+			<img class="financeimage" src="@annualrep2img?.Url()" alt="Finance image">
 			<h3>@Model?.Value("annualReportTitle")</h3>
 			<img class="date-image" src="@annualrep2dateimg?.Url()" alt="Date">
 			
 			</div>
 			<div class="bsninsigt">
-			<img class="finance-image" src="@businessins2img?.Url()" alt="Finance image">
+			<img class="financeimage" src="@businessins2img?.Url()" alt="Finance image">
 			<h3>@Model?.Value("businessTitle")</h3>
 			<img class="date-image" src="@businessinsdate2img?.Url()" alt="Date">
 			</div>
 			<div class="finceadv">
-			<img class="finance-image" src="@finaceadv2img?.Url()" alt="Finance image">
+			<img class="financeimage" src="@finaceadv2img?.Url()" alt="Finance image">
 			<h3>@Model?.Value("finacialAdvTitle")</h3>
 			<img class="date-image" src="@finaceadvdate2img?.Url()" alt="Date">
 			
 			</div>
 			<div class="bdgplan">
-			<img class="budgetplan-image" src="@budgetplan2img?.Url()" alt="Budgetplan image">
+			<img class="budgetplanimage" src="@budgetplan2img?.Url()" alt="Budgetplan image">
 			<h3>@Model?.Value("budgetTitle")</h3>
-			<img class="budgetplan-image" src="@budgetplandate2img?.Url()" alt="Budgetplan image">
+			<img class="budgetplanimage" src="@budgetplandate2img?.Url()" alt="Budgetplan image">
 			
 			</div>
-				<div class="projectdetails-tags2">
+				<div class="projectdetailstags2">
 			<h3>Tags</h3>
-				@if (Model.HasValue("tags"))
-				{
- 					var tags = Model.Value<IEnumerable<string>>("tags") ;
-    				<ul>
-       				 @foreach(var tag in tags)
-        				{
-            				<li>@tag</li>
-        				}
-    				</ul>
-}
+				
+
 			</div>
 		</aside>
 	</div>

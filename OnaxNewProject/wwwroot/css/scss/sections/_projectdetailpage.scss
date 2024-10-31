@@ -2,4 +2,13 @@
         text-align: center;
         height: 245px;
  }
+.projectdetailsannualreport {
+    margin-left: 380px;
+    width: 780px;
 
+    .container {
+        .projectdetailscontent {
+            display:flex;
+        }
+    }
+}

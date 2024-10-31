@@ -15,55 +15,60 @@
 <div class="topmenu bg-gray">
 	<h2>@Model.Value("ourProjectsTitle")</h2>
 </div>
-<section class="ourproject-headpage">
+<section class="ourprojectheadpage">
 	<div class="container">
-		<div class="ourproject-content">
-			<div class="allimgrpt">
-			<div class="annulrpt">
-				<img class="finance-image" src="@annualrep1img?.Url()" alt="Finance image">
-				<h3>@Model.Value("ourProjectsImage1Headline")</h3>
-				<img class="date-image" src="@annualrep1dateimg?.Url()" alt="Date">
-				<p>@Model.Value("ourProjectsImage1Text")</p>
-					<a href="/our-project-details">@Model.Value("ourProjectsImage1ButtonText")</a>
-			</div>
-			<div class="bsninsigt">
-				<img class="finance-image" src="@businessins1img?.Url()" alt="Finance image">
-				<h3>@Model.Value("ourProjectsImage2Headline")</h3>
-				<img class="date-image" src="@businessinsdate1img?.Url()" alt="Date">
-				<p>@Model.Value("ourProjectsImage2Text")</p>
-					<a href="/our-project-details">@Model.Value("ourProjectsImage1ButtonText")</a>
-			</div>
-			<div class="finceadv">
-				<img class="finance-image" src="@finaceadvimg?.Url()" alt="Finance image">
-				<h3>@Model.Value("ourProjectsImage3Headline")</h3>
-				<img class="date-image" src="@finaceadvdateimg?.Url()" alt="Date">
-				<p>@Model.Value("ourProjectsImage3Text")</p>
-					<a href="/our-project-details">@Model.Value("ourProjectsImage1ButtonText")</a>
-			</div>
-			<div class="bdgplan">
-				<img class="budgetplan-image" src="@budgetplanimg?.Url()" alt="Budgetplan image">
-				<h3>@Model.Value("ourProjectsImage4Headline")</h3>
-				<img class="budgetplan-image" src="@budgetplandateimg?.Url()" alt="Budgetplan image">
-				<p>@Model.Value("ourProjectsImage4Text")</p>
-					<a href="/our-project-details">@Model.Value("ourProjectsImage1ButtonText")</a>
-			</div>
-			</div>
+		<div class="ourprojectcontent">
+				<div class="annulrpt">
+					<img class="financeimage" src="@annualrep1img?.Url()" alt="Finance image">
+					<aside class="sideannul">
+						<h4>@Model.Value("ourProjectsImage1Headline")</h4>
+						<img class="dateimage" src="@annualrep1dateimg?.Url()" alt="Date">
+						<p>@Model.Value("ourProjectsImage1Text")</p>
+						<a href="/our-project-details">@Model.Value("ourProjectsImage1ButtonText")</a>
+					</aside>
+				</div>
+			<hr />
+				<div class="bsninsigt">
+					<img class="financeimage" src="@businessins1img?.Url()" alt="Finance image">
+					<aside class="sidebsn">
+						<h4>@Model.Value("ourProjectsImage2Headline")</h4>
+						<img class="dateimage" src="@businessinsdate1img?.Url()" alt="Date">
+						<p>@Model.Value("ourProjectsImage2Text")</p>
+						<a href="/our-project-details">@Model.Value("ourProjectsImage1ButtonText")</a>
+					</aside>
+				</div>
+			<hr />
+				<div class="finceadv">
+					<img class="financeimage" src="@finaceadvimg?.Url()" alt="Finance image">
+					<aside class="sidefina">
+						<h4>@Model.Value("ourProjectsImage3Headline")</h4>
+						<img class="dateimage" src="@finaceadvdateimg?.Url()" alt="Date">
+						<p>@Model.Value("ourProjectsImage3Text")</p>
+						<a href="/our-project-details">@Model.Value("ourProjectsImage1ButtonText")</a>
+					</aside>
+				</div>
+			<hr />
+				<div class="bdgplan">
+					<img class="budgetplanimage" src="@budgetplanimg?.Url()" alt="Budgetplan image">
+					<aside class="sidebdg">
+						<h4>@Model.Value("ourProjectsImage4Headline")</h4>
+						<img class="budgetplanimage" src="@budgetplandateimg?.Url()" alt="Budgetplan image">
+						<p>@Model.Value("ourProjectsImage4Text")</p>
+						<a href="/our-project-details">@Model.Value("ourProjectsImage1ButtonText")</a>
+					</aside>
+					
+				</div>
+			
+			
 		</div>
-		<aside>
-			<h3>Tags</h3>
-			@if(Model.HasValue("tags"))
-				{
- 					var tags = Model.Value<IEnumerable<string>>("tags");
-    				<ul>
-       				 @foreach(var tag in tags)
-        				{
-            				<li>@tag</li>
-        				}
-    				</ul>
-}
-			<form class="howcanwehelp">
+		<hr class="vertical" />
+		<aside class="tagsforms">
+			
+			<h4>Tags</h4>
+			
+			<form class="howcanwehelp bg-primary">
 				<h3>How can we help you?</h3>
-				<label>Online support 24/7, we are here to help you</label>
+				<p>Online support 24/7, we are here to help you</p>
 				<input type="text" placeholder="Email address ">
 				<i class="fa-regular fa-envelope"></i>
 			</form>
