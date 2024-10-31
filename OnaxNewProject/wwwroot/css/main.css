@@ -62,11 +62,37 @@ button {
   display: flex;
   margin-left: 351px; }
 
-.aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages1 {
-  display: flex; }
-
-.aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 {
-  display: flex; }
+.aboutusourexpertsection .container .aboutusourexpertsection-content {
+  align-items: center;
+  align-content: center;
+  justify-items: center; }
+  .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages1 {
+    display: flex;
+    gap: 20px; }
+    .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages1 .expert1 {
+      display: grid;
+      border: solid 1px lightgrey; }
+    .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages1 .expert2 {
+      display: grid;
+      border: solid 1px lightgrey; }
+    .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages1 .expert3 {
+      display: grid;
+      border: solid 1px lightgrey; }
+  .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 {
+    display: flex;
+    gap: 20px; }
+    .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert4 {
+      display: grid;
+      border: solid 1px lightgrey; }
+    .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert5 {
+      display: grid;
+      border: solid 1px lightgrey; }
+    .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert6 {
+      display: grid;
+      border: solid 1px lightgrey; }
+    .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert7 {
+      display: grid;
+      border: solid 1px lightgrey; }
 
 .topmenu {
   text-align: center;
@@ -187,27 +213,54 @@ button {
       .mainsuccesstroysection .container .mainsuccesstroycontent .overbgsuccesstory .successstorynumbers .customerservsection3 {
         margin-right: 100px; }
     .mainsuccesstroysection .container .mainsuccesstroycontent .overbgsuccesstory .imgsuccessstory {
-      position: absolute; }
+      position: relative;
+      left: 25%; }
 
 .mainrecentprojectsection {
   margin-top: 400px; }
+  .mainrecentprojectsection .container .recentprojectcontent .recentheadlines {
+    margin-right: 360px; }
   .mainrecentprojectsection .container .recentprojectcontent .recentprojectscontrols {
-    display: flex; }
-    .mainrecentprojectsection .container .recentprojectcontent .recentprojectscontrols .projectstory1 {
-      position: absolute; }
-    .mainrecentprojectsection .container .recentprojectcontent .recentprojectscontrols projectstory2 {
-      position: absolute; }
-    .mainrecentprojectsection .container .recentprojectcontent .recentprojectscontrols .projectstory3 {
-      position: absolute; }
-    .mainrecentprojectsection .container .recentprojectcontent .recentprojectscontrols .projectstory4 {
-      position: absolute; }
+    display: flex;
+    text-align: center; }
+    .mainrecentprojectsection .container .recentprojectcontent .recentprojectscontrols .anul1 .projectstory1 {
+      position: relative;
+      bottom: 125px;
+      background-color: black;
+      opacity: 70%;
+      width: 480px;
+      height: 90px;
+      font-size: 20px; }
+    .mainrecentprojectsection .container .recentprojectcontent .recentprojectscontrols .bsn1 .projectstory2 {
+      position: relative;
+      bottom: 125px;
+      background-color: black;
+      opacity: 70%;
+      width: 480px;
+      height: 90px;
+      font-size: 20px; }
+    .mainrecentprojectsection .container .recentprojectcontent .recentprojectscontrols .fin1 .projectstory3 {
+      position: relative;
+      bottom: 125px;
+      background-color: black;
+      opacity: 70%;
+      width: 480px;
+      height: 90px;
+      font-size: 20px; }
+    .mainrecentprojectsection .container .recentprojectcontent .recentprojectscontrols .bdg1 .projectstory4 {
+      position: relative;
+      bottom: 125px;
+      background-color: black;
+      opacity: 70%;
+      width: 480px;
+      height: 90px;
+      font-size: 20px; }
 
 .brands .container .brands-content {
-  text-align: center;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-  padding-right: 70px; }
+  display: flex;
+  gap: 100px;
+  margin-left: 100px;
+  padding-left: 100px; }
 
 .topmenu {
   text-align: center;
@@ -345,8 +398,19 @@ button {
   .navbar .logo {
     margin-left: 200px; }
 
-.letusknow .container .letusknow-content {
-  display: flex; }
+.letusknow {
+  margin-top: 140px; }
+  .letusknow .container .letusknow-content {
+    display: flex; }
+    .letusknow .container .letusknow-content .leusknow {
+      position: relative; }
+      .letusknow .container .letusknow-content .leusknow .dot {
+        position: relative;
+        left: 50%; }
+      .letusknow .container .letusknow-content .leusknow .backgroundman {
+        position: relative; }
+      .letusknow .container .letusknow-content .leusknow .letusknowpic {
+        position: relative; }
 
 .topmenu {
   text-align: center;

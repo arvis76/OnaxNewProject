@@ -202,7 +202,9 @@
                 }
 
                 .imgsuccessstory{
-                    position:absolute;
+                    position:relative;
+                   
+                    left:25%;
                 }
             }
         }
@@ -214,32 +216,60 @@
     .container {
         .recentprojectcontent {
 
+            .recentheadlines {
+                margin-right: 360px;
+            }
 
             .recentprojectscontrols {
                 display: flex;
+                text-align: center;
 
-                .projectstory1 {
-                    position: absolute;
-                    
-                    
+                .anul1 {
+                    .projectstory1 {
+                        position: relative;
+                        bottom: 125px;
+                        background-color: black;
+                        opacity: 70%;
+                        width: 480px;
+                        height: 90px;
+                        font-size: 20px;
+                    }
                 }
 
-                projectstory2 {
-                    position: absolute;
-                    
-                    
+                .bsn1 {
+                    .projectstory2 {
+                        position: relative;
+                        bottom: 125px;
+                        background-color: black;
+                        opacity: 70%;
+                        width: 480px;
+                        height: 90px;
+                        font-size: 20px;
+                    }
                 }
 
-                .projectstory3 {
-                    position: absolute;
-                    
-                    
+                .fin1 {
+                    .projectstory3 {
+                        position: relative;
+                        bottom: 125px;
+                        background-color: black;
+                        opacity: 70%;
+                        width: 480px;
+                        height: 90px;
+                        font-size: 20px;
+                    }
                 }
 
-                .projectstory4 {
-                    position: absolute;
-                  
-                    
+                .bdg1 {
+                    .projectstory4 {
+                        position: relative;
+                        bottom: 125px;
+                        background-color: black;
+                        opacity: 70%;
+                        width: 480px;
+                        height: 90px;
+                        font-size: 20px;
+                    }
                 }
             }
         }
@@ -248,11 +278,10 @@
 .brands {
     .container {
         .brands-content {
-            text-align: center;
-            align-items: center;
-            justify-items: center;
-            justify-content: center;
-            padding-right: 70px;
+           display:flex;
+           gap:100px;
+           margin-left:100px;
+           padding-left:100px;
         }
     }
 }

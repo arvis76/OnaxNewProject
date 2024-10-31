@@ -176,28 +176,46 @@
 <section class="mainrecentprojectsection">
 	<div class="container">
 		<div class="recentprojectcontent">
-			<h6>@Model.Value("ourProjectSectionTitle")</h6>
-			<h2>@Model.Value("ourProjectSectionHeadline")</h2>
+			<div class="recentheadlines">
+				<h6>@Model.Value("ourProjectSectionTitle")</h6>
+				<h2>@Model.Value("ourProjectSectionHeadline")</h2>
+			</div>
 			<div class="recentprojectscontrols">
-				<img src="@annualreportmain?.Url()" class="">
-				<div class="projectstory1">
-					<h6>@Model.Value("ourProjectSectionAnnualreportTitle")</h6>
-					<p>@Model.Value("ourProjectSectionAnnualreportTxt")</p>
+				<div class="anul1">
+					<img src="@annualreportmain?.Url()" class="">
+					<div class="projectstory1">
+						<a href="/our-project"> 
+							<h6>@Model.Value("ourProjectSectionAnnualreportTitle")</h6>
+							<p>@Model.Value("ourProjectSectionAnnualreportTxt")</p>
+						</a>
+					</div>
 				</div>
-				<img src="@buisnessreportmain?.Url()" class="">
-				<div class="projectstory2">
-					<h6>@Model.Value("ourProjectSectionBuisnessTitle")</h6>
-					<p>@Model.Value("ourProjectSectionBusinessTxt")</p>
+				<div class="bsn1">
+					<img src="@buisnessreportmain?.Url()" class="">
+					<div class="projectstory2">
+						<a href="/our-project">
+							<h6>@Model.Value("ourProjectSectionBuisnessTitle")</h6>
+							<p>@Model.Value("ourProjectSectionBusinessTxt")</p>
+						</a>
+					</div>
 				</div>
-				<img src="@financialreportmain?.Url()" class="">
-				<div class="projectstory3">
-					<h6>@Model.Value("ourProjectSectionFinacialTitle")</h6>
-					<p>@Model.Value("ourProjectSectionFinacialTxt")</p>
+				<div class="fin1">
+					<img src="@financialreportmain?.Url()" class="">
+					<div class="projectstory3">
+						<a href="/our-project">
+							<h6>@Model.Value("ourProjectSectionFinacialTitle")</h6>
+							<p>@Model.Value("ourProjectSectionFinacialTxt")</p>
+						</a>
+					</div>
 				</div>
-				<img src="@budgetreportmain?.Url()" class="">
-				<div class="projectstory4">
-					<h6>@Model.Value("ourProjectSectionBudgetTitle")</h6>
-					<p>@Model.Value("ourProjectSectionBudgetTxt")</p>
+				<div class="bdg1">
+					<img src="@budgetreportmain?.Url()" class="">
+					<div class="projectstory4">
+						<a href="/our-project">
+							<h6>@Model.Value("ourProjectSectionBudgetTitle")</h6>
+							<p>@Model.Value("ourProjectSectionBudgetTxt")</p>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>

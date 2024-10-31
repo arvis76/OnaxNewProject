@@ -1,12 +1,25 @@
 ﻿.letusknow {
+    margin-top:140px;
     .container {
         .letusknow-content {
             display: flex;
 
-            .leusknow{
-                
-                
-                
+            .leusknow {
+                position: relative;
+
+                .dot {
+                    position: relative;
+                    left: 50%;
+                }
+
+                .backgroundman {
+                    position: relative;
+                }
+
+                .letusknowpic {
+                    position: relative;
+                    
+                }
             }
         }
     }

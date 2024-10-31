@@ -29,16 +29,55 @@
 }
 .aboutusourexpertsection {
     .container {
-        .aboutusourexpertsection-content {
 
+        .aboutusourexpertsection-content {
+            align-items: center;
+            align-content: center;
+            justify-items: center;
 
             .aboutusourexpertsectionimages1 {
                 display: flex;
+                gap: 20px;
 
+                .expert1 {
+                    display: grid;
+                    border: solid 1px lightgrey;
+                }
+
+                .expert2 {
+                    display: grid;
+                    border: solid 1px lightgrey;
+                }
+
+                .expert3 {
+                    display: grid;
+                    border: solid 1px lightgrey;
+                }
             }
 
             .aboutusourexpertsectionimages2 {
                 display: flex;
+                gap: 20px;
+
+                .expert4 {
+                    display: grid;
+                    border: solid 1px lightgrey;
+                }
+
+                .expert5 {
+                    display: grid;
+                    border: solid 1px lightgrey;
+                }
+
+                .expert6 {
+                    display: grid;
+                    border: solid 1px lightgrey;
+                }
+
+                .expert7 {
+                    display: grid;
+                    border: solid 1px lightgrey;
+                }
             }
         }
     }
