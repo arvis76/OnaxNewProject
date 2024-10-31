@@ -46,7 +46,8 @@ button {
     text-decoration: none; }
 
 .topmenu {
-  text-align: center; }
+  text-align: center;
+  height: 245px; }
 
 .aboutusmainpage {
   margin-top: 120px; }
@@ -66,6 +67,10 @@ button {
 
 .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 {
   display: flex; }
+
+.topmenu {
+  text-align: center;
+  height: 245px; }
 
 .herosection .container .herocontent {
   position: absolute;
@@ -209,13 +214,11 @@ button {
 
 .topmenu {
   text-align: center;
-  margin-bottom: 120px;
-  margin-top: 120px; }
+  height: 245px; }
 
 .topmenu {
   text-align: center;
-  margin-bottom: 120px;
-  margin-top: 120px; }
+  height: 245px; }
 
 .ourproject-headpage .container .ourproject-content {
   display: flex; }
@@ -223,9 +226,8 @@ button {
     border: solid 1px black; }
 
 .topmenu {
+  text-align: center;
   height: 245px; }
-  .topmenu h2 {
-    text-align: center; }
 
 .ourservicemainpage .container .ourservicemain-content {
   padding-top: 100px;
@@ -309,9 +311,7 @@ button {
 
 .topmenu {
   text-align: center;
-  margin-bottom: 120px;
-  margin-top: 120px;
-  margin-top: 50px; }
+  height: 245px; }
 
 .servicedetails-section .container .servicedetails-content {
   background-color: black; }
