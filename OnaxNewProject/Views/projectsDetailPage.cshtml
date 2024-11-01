@@ -31,8 +31,10 @@
 			</div>
 			<div class="projectdetailsnuncfac">
 				<img class="financeimage" src="@projectdetailssecondimg?.Url()" alt="Finance image">
+				<div class="nuncfacimg">
 				<h5>@Model.Value("projectsDetailImage2Headline")</h5>
 				<p>@Model.Value("projectsDetailImage2Text")</p>
+				</div>
 			</div>
 			<div class="projectdetailsnullarmblandis">
 				<h5>@Model.Value("projectsDetailImage3OverHeadline")</h5>
@@ -43,38 +45,85 @@
 			</div>
 			<div class="projectdetailstags1">
 			<h5>Tags: </h5>
-		
+			<div class="tagsnew">
+				@if(Model.HasValue("projectsDetailTags"))
+					{
+ 						var tags = Model.Value<IEnumerable<string>>("projectsDetailTags");
+   					 <ul>
+        				@foreach(var tag in tags)
+        				{
+            				<tags>@tag</tags>
+        				}
+   					 </ul>
+					}
+			</div>
 			</div>
 		</div>
+		<hr class="vertical" />
 		<aside class="asideprdetails">
+			<h4>@Model.Value("recentProjectsHeadline")</h4>
 			<div class="annaulrpt">
 			<img class="financeimage" src="@annualrep2img?.Url()" alt="Finance image">
-			<h3>@Model?.Value("annualReportTitle")</h3>
-			<img class="date-image" src="@annualrep2dateimg?.Url()" alt="Date">
+			<div class="finatxt">
+			<h5>@Model.Value("recentProjectsImage1Headline")</h5>
+					<div class="date-image">
+						<img class="date-image" src="@annualrep2dateimg?.Url()" alt="Date">
+					</div>
+			</div>
 			
 			</div>
 			<div class="bsninsigt">
 			<img class="financeimage" src="@businessins2img?.Url()" alt="Finance image">
-			<h3>@Model?.Value("businessTitle")</h3>
-			<img class="date-image" src="@businessinsdate2img?.Url()" alt="Date">
+			<div class="finatxt">
+			<h5>@Model.Value("recentProjectsImage2Headline")</h5>
+					<div class="date-image">
+						<img class="date-image" src="@businessinsdate2img?.Url()" alt="Date">
+					</div>
+			</div>
+				
 			</div>
 			<div class="finceadv">
 			<img class="financeimage" src="@finaceadv2img?.Url()" alt="Finance image">
-			<h3>@Model?.Value("finacialAdvTitle")</h3>
-			<img class="date-image" src="@finaceadvdate2img?.Url()" alt="Date">
+			<div class="finatxt">
+			<h5>@Model.Value("recentProjectsImage3Headline")</h5>
+					<div class="date-image">
+						<img class="date-image" src="@finaceadvdate2img?.Url()" alt="Date">
+					</div>
+			</div>
 			
 			</div>
 			<div class="bdgplan">
-			<img class="budgetplanimage" src="@budgetplan2img?.Url()" alt="Budgetplan image">
-			<h3>@Model?.Value("budgetTitle")</h3>
-			<img class="budgetplanimage" src="@budgetplandate2img?.Url()" alt="Budgetplan image">
-			
+				<img class="financeimage" src="@budgetplan2img?.Url()" alt="Budgetplan image">
+				<div class="finatxt">
+			<h5>@Model.Value("recentProjectsImage4Headline")</h5>
+					<div class="date-image">
+						<img class="budgetplanimage" src="@budgetplandate2img?.Url()" alt="Budgetplan image">
+					</div>
+			</div>
 			</div>
 				<div class="projectdetailstags2">
 			<h3>Tags</h3>
-				
-
+				<div class="tagsnew">
+				@if(Model.HasValue("recentProjectsTags"))
+					{
+ 						var tags = Model.Value<IEnumerable<string>>("recentProjectsTags");
+   					 <ul>
+        				@foreach(var tag in tags)
+        				{
+            				<tags>@tag</tags>
+        				}
+   					 </ul>
+					}
+					</div>
 			</div>
+
+			<form class="howcanwehelp bg-dark">
+				<h4>How can we help you?</h4>
+				<p>online support 24/7, we are here to<br>help you </p>
+				<input class="inputhelp" placeholder="E-mail address"><i class="fa-regular fa-envelope"></i>
+			</form>
+
+		
 		</aside>
 	</div>
 

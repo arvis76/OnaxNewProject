@@ -65,15 +65,25 @@
 		<aside class="tagsforms">
 			
 			<h4>Tags</h4>
-			
-			<form class="howcanwehelp bg-primary">
-				<h3>How can we help you?</h3>
-				<p>Online support 24/7, we are here to help you</p>
-				<input type="text" placeholder="Email address ">
-				<i class="fa-regular fa-envelope"></i>
+			<div class="tagsnew">
+				@if(Model.HasValue("ourProjectsTags"))
+					{
+ 						var tags = Model.Value<IEnumerable<string>>("ourProjectsTags");
+   					 <ul>
+        				@foreach(var tag in tags)
+        				{
+            				<tags>@tag</tags>
+        				}
+   					 </ul>
+					}
+				</div>
+			<form class="howcanwehelp bg-dark">
+				<h4>How can we help you?</h4>
+				<p>online support 24/7, we are here to<br>help you </p>
+				<input class="inputhelp" placeholder="E-mail address"><i class="fa-regular fa-envelope"></i>
 			</form>
 		</aside>
 	</div>
-
+	
 </section>
 <section>@await Html.PartialAsync("letusknowpartialview")</section>

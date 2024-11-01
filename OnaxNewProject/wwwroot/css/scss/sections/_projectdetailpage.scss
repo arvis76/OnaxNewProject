@@ -1,14 +1,150 @@
 ﻿.topmenu {
-        text-align: center;
-        height: 245px;
- }
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    height: 245px;
+}
 .projectdetailsannualreport {
     margin-left: 380px;
     width: 780px;
 
     .container {
+        h3 {
+            color: black;
+        }
+
+        .tagsnew {
+            tags {
+                border: solid 1px black;
+                border-radius: 20%;
+                margin-left: 20px;
+                margin-bottom: 20px;
+                width: 120px;
+                height: 40px;
+            }
+        }
+
+        margin-top: 100px;
+        display: flex;
+
         .projectdetailscontent {
-            display:flex;
+            margin-right: 60px;
+
+            .projectdetailsnuncfac {
+                display: flex;
+
+                .nuncfacimg {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .asideprdetails {
+            margin-left: 40px;
+
+            .annaulrpt {
+                display: flex;
+
+                .financeimage {
+                    width: 130px;
+                    height: 80px;
+                }
+
+                .finatxt {
+                    display: grid;
+                    top: 10px;
+                    margin-left: 5px;
+                    margin-top: -25px;
+
+                    .date-image {
+                        margin-top: -30px
+                    }
+                }
+            }
+
+            .bsninsigt {
+                display: flex;
+
+                .financeimage {
+                    width: 130px;
+                    height: 80px;
+                }
+
+                .finatxt {
+                    display: grid;
+                    bottom: 10px;
+                    margin-left: 5px;
+                    margin-top: -30px;
+
+                    .date-image {
+                        margin-top: -30px
+                    }
+                }
+            }
+
+            .finceadv {
+                display: flex;
+
+                .financeimage {
+                    width: 130px;
+                    height: 80px;
+                }
+
+                .finatxt {
+                    display: grid;
+                    margin-left: 5px;
+                    margin-top: -30px;
+
+                    .date-image {
+                        margin-top: -30px
+                    }
+                }
+            }
+
+            .bdgplan {
+                display: flex;
+
+                .financeimage {
+                    width: 130px;
+                    height: 80px;
+                }
+
+                .finatxt {
+                    display: grid;
+                    margin-left: 5px;
+                    margin-top: -30px;
+
+                    .date-image {
+                        margin-top: -30px
+                    }
+                }
+            }
+
+            .howcanwehelp {
+                padding-top: 20px;
+                width: 300px;
+                height: 240px;
+
+                h4 {
+                    color: white;
+                }
+
+                p {
+                    color: white;
+                }
+
+                .fa-envelope {
+                    position: relative;
+                    right: 30px;
+                }
+
+                text-align: center;
+
+                .inputhelp {
+                    width: 265px;
+                    height: 50px;
+                }
+            }
         }
     }
 }

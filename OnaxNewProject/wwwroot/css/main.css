@@ -47,6 +47,8 @@ button {
 
 .topmenu {
   text-align: center;
+  align-items: center;
+  align-content: center;
   height: 245px; }
 
 .aboutusmainpage {
@@ -56,51 +58,120 @@ button {
     margin-left: 425px; }
   .aboutusmainpage .container .aboutasidetext {
     margin-left: 60px;
-    margin-right: 100px; }
+    margin-right: 100px;
+    width: 735px; }
 
 .aboutustrustsection .container .aboutustrustsection-content {
   display: flex;
   margin-left: 351px; }
 
-.aboutusourexpertsection .container .aboutusourexpertsection-content {
-  align-items: center;
-  align-content: center;
-  justify-items: center; }
-  .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages1 {
-    display: flex;
-    gap: 20px; }
-    .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages1 .expert1 {
-      display: grid;
-      border: solid 1px lightgrey; }
-    .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages1 .expert2 {
-      display: grid;
-      border: solid 1px lightgrey; }
-    .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages1 .expert3 {
-      display: grid;
-      border: solid 1px lightgrey; }
-  .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 {
-    display: flex;
-    gap: 20px; }
-    .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert4 {
-      display: grid;
-      border: solid 1px lightgrey; }
-    .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert5 {
-      display: grid;
-      border: solid 1px lightgrey; }
-    .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert6 {
-      display: grid;
-      border: solid 1px lightgrey; }
-    .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert7 {
-      display: grid;
-      border: solid 1px lightgrey; }
+.aboutusourexpertsection .container {
+  margin-top: 100px; }
+  .aboutusourexpertsection .container .aboutusourexpertsection-content {
+    align-items: center;
+    align-content: center;
+    justify-items: center; }
+    .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages1 {
+      display: flex;
+      gap: 20px; }
+      .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages1 .expert1 {
+        display: grid;
+        border: solid 1px lightgrey; }
+        .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages1 .expert1 h5 {
+          margin-left: 10px; }
+        .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages1 .expert1 p {
+          margin-left: 10px; }
+      .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages1 .expert2 {
+        display: grid;
+        border: solid 1px lightgrey; }
+        .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages1 .expert2 h5 {
+          margin-left: 10px; }
+        .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages1 .expert2 p {
+          margin-left: 10px; }
+      .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages1 .expert3 {
+        display: grid;
+        border: solid 1px lightgrey; }
+        .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages1 .expert3 h5 {
+          margin-left: 10px; }
+        .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages1 .expert3 p {
+          margin-left: 10px; }
+    .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 {
+      margin-top: 75px;
+      display: flex;
+      gap: 20px; }
+      .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert4 {
+        display: grid;
+        border: solid 1px lightgrey; }
+        .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert4 h5 {
+          margin-left: 10px; }
+        .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert4 p {
+          margin-left: 10px; }
+      .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert5 {
+        display: grid;
+        border: solid 1px lightgrey; }
+        .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert5 h5 {
+          margin-left: 10px; }
+        .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert5 p {
+          margin-left: 10px; }
+      .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert6 {
+        display: grid;
+        border: solid 1px lightgrey; }
+        .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert6 h5 {
+          margin-left: 10px; }
+        .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert6 p {
+          margin-left: 10px; }
+      .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert7 {
+        display: grid;
+        border: solid 1px lightgrey; }
+        .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert7 h5 {
+          margin-left: 10px; }
+        .aboutusourexpertsection .container .aboutusourexpertsection-content .aboutusourexpertsectionimages2 .expert7 p {
+          margin-left: 10px; }
 
 .topmenu {
   text-align: center;
+  align-items: center;
+  align-content: center;
   height: 245px; }
+
+.contactpage .container .contactpage-content {
+  justify-content: center;
+  justify-items: center;
+  text-align: center; }
+  .contactpage .container .contactpage-content .requstcallback {
+    border: solid 1px black;
+    position: absolute;
+    left: 20%;
+    top: 170%;
+    width: 1170px;
+    height: 565px;
+    background-color: white; }
+    .contactpage .container .contactpage-content .requstcallback .inputnewform {
+      margin-bottom: 30px; }
+      .contactpage .container .contactpage-content .requstcallback .inputnewform .name2 {
+        width: 500px;
+        height: 50px;
+        margin-bottom: 20px; }
+      .contactpage .container .contactpage-content .requstcallback .inputnewform .phone2 {
+        width: 500px;
+        height: 50px;
+        margin-bottom: 20px; }
+      .contactpage .container .contactpage-content .requstcallback .inputnewform .email2 {
+        width: 500px;
+        height: 50px;
+        margin-bottom: 20px; }
+      .contactpage .container .contactpage-content .requstcallback .inputnewform .email3 {
+        border: solid 1px black;
+        width: 500px;
+        height: 50px;
+        margin-bottom: 20px; }
+
+.brands .container .brands-content {
+  margin-top: 200px; }
 
 .herosection .container .herocontent {
   position: absolute;
-  left: 200px;
+  left: 375px;
   top: 300px;
   width: 30%; }
 
@@ -108,8 +179,8 @@ button {
   display: flex;
   height: 550px; }
   .mainaboutussection .container .mainaboutuscontent {
-    margin-left: 200px;
-    width: 40%; }
+    margin-left: 375px;
+    width: 650px; }
   .mainaboutussection .container .inputformabout {
     position: absolute;
     left: 55%;
@@ -143,6 +214,9 @@ button {
         width: 90%;
         height: 50px; }
 
+.mainourservicesection .container h3 {
+  color: black; }
+
 .mainourservicesection .container .mainourservicecontent {
   padding-top: 100px;
   text-align: center;
@@ -150,7 +224,7 @@ button {
   justify-items: center;
   justify-content: center; }
   .mainourservicesection .container .mainourservicecontent .successheadline {
-    width: 60%; }
+    width: 630px; }
   .mainourservicesection .container .mainourservicecontent .servicesectionfirts {
     display: flex; }
     .mainourservicesection .container .mainourservicecontent .servicesectionfirts .service1 {
@@ -208,13 +282,21 @@ button {
       display: flex; }
       .mainsuccesstroysection .container .mainsuccesstroycontent .overbgsuccesstory .successstorynumbers .customerservsection1 {
         margin-right: 100px; }
+        .mainsuccesstroysection .container .mainsuccesstroycontent .overbgsuccesstory .successstorynumbers .customerservsection1 h3 {
+          font-size: 100px; }
       .mainsuccesstroysection .container .mainsuccesstroycontent .overbgsuccesstory .successstorynumbers .customerservsection2 {
         margin-right: 100px; }
+        .mainsuccesstroysection .container .mainsuccesstroycontent .overbgsuccesstory .successstorynumbers .customerservsection2 h3 {
+          font-size: 100px; }
       .mainsuccesstroysection .container .mainsuccesstroycontent .overbgsuccesstory .successstorynumbers .customerservsection3 {
         margin-right: 100px; }
+        .mainsuccesstroysection .container .mainsuccesstroycontent .overbgsuccesstory .successstorynumbers .customerservsection3 h3 {
+          font-size: 100px; }
     .mainsuccesstroysection .container .mainsuccesstroycontent .overbgsuccesstory .imgsuccessstory {
       position: relative;
       left: 25%; }
+  .mainsuccesstroysection .container .mainsuccesstroycontent .dotmap2 {
+    height: 840px; }
 
 .mainrecentprojectsection {
   margin-top: 400px; }
@@ -264,61 +346,167 @@ button {
 
 .topmenu {
   text-align: center;
+  align-items: center;
+  align-content: center;
   height: 245px; }
 
 .projectdetailsannualreport {
   margin-left: 380px;
   width: 780px; }
-  .projectdetailsannualreport .container .projectdetailscontent {
+  .projectdetailsannualreport .container {
+    margin-top: 100px;
     display: flex; }
+    .projectdetailsannualreport .container h3 {
+      color: black; }
+    .projectdetailsannualreport .container .tagsnew tags {
+      border: solid 1px black;
+      border-radius: 20%;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      width: 120px;
+      height: 40px; }
+    .projectdetailsannualreport .container .projectdetailscontent {
+      margin-right: 60px; }
+      .projectdetailsannualreport .container .projectdetailscontent .projectdetailsnuncfac {
+        display: flex; }
+        .projectdetailsannualreport .container .projectdetailscontent .projectdetailsnuncfac .nuncfacimg {
+          margin-left: 10px; }
+    .projectdetailsannualreport .container .asideprdetails {
+      margin-left: 40px; }
+      .projectdetailsannualreport .container .asideprdetails .annaulrpt {
+        display: flex; }
+        .projectdetailsannualreport .container .asideprdetails .annaulrpt .financeimage {
+          width: 130px;
+          height: 80px; }
+        .projectdetailsannualreport .container .asideprdetails .annaulrpt .finatxt {
+          display: grid;
+          top: 10px;
+          margin-left: 5px;
+          margin-top: -25px; }
+          .projectdetailsannualreport .container .asideprdetails .annaulrpt .finatxt .date-image {
+            margin-top: -30px; }
+      .projectdetailsannualreport .container .asideprdetails .bsninsigt {
+        display: flex; }
+        .projectdetailsannualreport .container .asideprdetails .bsninsigt .financeimage {
+          width: 130px;
+          height: 80px; }
+        .projectdetailsannualreport .container .asideprdetails .bsninsigt .finatxt {
+          display: grid;
+          bottom: 10px;
+          margin-left: 5px;
+          margin-top: -30px; }
+          .projectdetailsannualreport .container .asideprdetails .bsninsigt .finatxt .date-image {
+            margin-top: -30px; }
+      .projectdetailsannualreport .container .asideprdetails .finceadv {
+        display: flex; }
+        .projectdetailsannualreport .container .asideprdetails .finceadv .financeimage {
+          width: 130px;
+          height: 80px; }
+        .projectdetailsannualreport .container .asideprdetails .finceadv .finatxt {
+          display: grid;
+          margin-left: 5px;
+          margin-top: -30px; }
+          .projectdetailsannualreport .container .asideprdetails .finceadv .finatxt .date-image {
+            margin-top: -30px; }
+      .projectdetailsannualreport .container .asideprdetails .bdgplan {
+        display: flex; }
+        .projectdetailsannualreport .container .asideprdetails .bdgplan .financeimage {
+          width: 130px;
+          height: 80px; }
+        .projectdetailsannualreport .container .asideprdetails .bdgplan .finatxt {
+          display: grid;
+          margin-left: 5px;
+          margin-top: -30px; }
+          .projectdetailsannualreport .container .asideprdetails .bdgplan .finatxt .date-image {
+            margin-top: -30px; }
+      .projectdetailsannualreport .container .asideprdetails .howcanwehelp {
+        padding-top: 20px;
+        width: 300px;
+        height: 240px;
+        text-align: center; }
+        .projectdetailsannualreport .container .asideprdetails .howcanwehelp h4 {
+          color: white; }
+        .projectdetailsannualreport .container .asideprdetails .howcanwehelp p {
+          color: white; }
+        .projectdetailsannualreport .container .asideprdetails .howcanwehelp .fa-envelope {
+          position: relative;
+          right: 30px; }
+        .projectdetailsannualreport .container .asideprdetails .howcanwehelp .inputhelp {
+          width: 265px;
+          height: 50px; }
 
 .topmenu {
   text-align: center;
+  align-items: center;
+  align-content: center;
   height: 245px; }
 
 .ourprojectheadpage .container {
-  margin-left: 375px;
   display: flex;
   margin-top: 50px;
   margin-bottom: 230px; }
-  .ourprojectheadpage .container .ourprojectcontent .verticalline {
-    border-left: 1px solid lightgray;
-    height: 500px;
-    position: absolute;
-    left: 10%;
-    margin-left: -2px;
-    top: 0; }
-  .ourprojectheadpage .container .ourprojectcontent .annulrpt {
-    display: flex;
-    gap: 30px; }
-    .ourprojectheadpage .container .ourprojectcontent .annulrpt .sideannul {
-      width: 360px;
-      padding-bottom: 20px; }
-  .ourprojectheadpage .container .ourprojectcontent .bsninsigt {
-    display: flex;
-    gap: 30px; }
-    .ourprojectheadpage .container .ourprojectcontent .bsninsigt .sidebsn {
-      width: 360px;
-      padding-bottom: 20px; }
-  .ourprojectheadpage .container .ourprojectcontent .finceadv {
-    display: flex;
-    gap: 30px; }
-    .ourprojectheadpage .container .ourprojectcontent .finceadv .sidefina {
-      width: 360px;
-      padding-bottom: 20px; }
-  .ourprojectheadpage .container .ourprojectcontent .bdgplan {
-    display: flex;
-    gap: 30px; }
-    .ourprojectheadpage .container .ourprojectcontent .bdgplan .sidebdg {
-      width: 360px;
-      padding-bottom: 20px; }
-
-.ourprojectheadpage .howcanwehelp {
-  margin-left: 90px;
-  display: grid; }
+  .ourprojectheadpage .container .ourprojectcontent {
+    margin-left: 375px; }
+    .ourprojectheadpage .container .ourprojectcontent .verticalline {
+      border-left: 1px solid lightgray;
+      height: 500px;
+      position: absolute;
+      left: 10%;
+      margin-left: -2px;
+      top: 0; }
+    .ourprojectheadpage .container .ourprojectcontent .annulrpt {
+      display: flex;
+      gap: 30px; }
+      .ourprojectheadpage .container .ourprojectcontent .annulrpt .sideannul {
+        width: 360px;
+        padding-bottom: 20px; }
+    .ourprojectheadpage .container .ourprojectcontent .bsninsigt {
+      display: flex;
+      gap: 30px; }
+      .ourprojectheadpage .container .ourprojectcontent .bsninsigt .sidebsn {
+        width: 360px;
+        padding-bottom: 20px; }
+    .ourprojectheadpage .container .ourprojectcontent .finceadv {
+      display: flex;
+      gap: 30px; }
+      .ourprojectheadpage .container .ourprojectcontent .finceadv .sidefina {
+        width: 360px;
+        padding-bottom: 20px; }
+    .ourprojectheadpage .container .ourprojectcontent .bdgplan {
+      display: flex;
+      gap: 30px; }
+      .ourprojectheadpage .container .ourprojectcontent .bdgplan .sidebdg {
+        width: 360px;
+        padding-bottom: 20px; }
+  .ourprojectheadpage .container .tagsforms {
+    width: 300px;
+    margin-right: 200px; }
+    .ourprojectheadpage .container .tagsforms .tagsnew {
+      right: 50px;
+      margin-bottom: 100px; }
+      .ourprojectheadpage .container .tagsforms .tagsnew tags {
+        border: solid 1px black;
+        border-radius: 25px; }
+    .ourprojectheadpage .container .tagsforms .howcanwehelp {
+      padding-top: 20px;
+      width: 300px;
+      height: 240px;
+      text-align: center; }
+      .ourprojectheadpage .container .tagsforms .howcanwehelp h4 {
+        color: white; }
+      .ourprojectheadpage .container .tagsforms .howcanwehelp p {
+        color: white; }
+      .ourprojectheadpage .container .tagsforms .howcanwehelp .fa-envelope {
+        position: relative;
+        right: 30px; }
+      .ourprojectheadpage .container .tagsforms .howcanwehelp .inputhelp {
+        width: 265px;
+        height: 50px; }
 
 .topmenu {
   text-align: center;
+  align-items: center;
+  align-content: center;
   height: 245px; }
 
 .ourservicemainpage .container .ourservicemain-content {
@@ -398,26 +586,87 @@ button {
   .navbar .logo {
     margin-left: 200px; }
 
-.letusknow {
-  margin-top: 140px; }
-  .letusknow .container .letusknow-content {
-    display: flex; }
-    .letusknow .container .letusknow-content .leusknow {
+.letusknow .container {
+  height: 770px; }
+  .letusknow .container .newknowpage {
+    display: flex;
+    margin-top: 100px; }
+    .letusknow .container .newknowpage .letusknow-content {
+      margin-top: 150px;
+      display: flex; }
+      .letusknow .container .newknowpage .letusknow-content .leusknow {
+        position: relative; }
+        .letusknow .container .newknowpage .letusknow-content .leusknow .dot {
+          position: relative;
+          left: 45%; }
+        .letusknow .container .newknowpage .letusknow-content .leusknow .backgroundman {
+          position: relative; }
+        .letusknow .container .newknowpage .letusknow-content .leusknow .letusknowpic {
+          position: absolute;
+          bottom: 10px;
+          left: 28%; }
+    .letusknow .container .newknowpage .letusknowaddress {
+      margin-top: 130px;
+      width: 375px;
+      margin-right: 420px;
       position: relative; }
-      .letusknow .container .letusknow-content .leusknow .dot {
-        position: relative;
-        left: 50%; }
-      .letusknow .container .letusknow-content .leusknow .backgroundman {
-        position: relative; }
-      .letusknow .container .letusknow-content .leusknow .letusknowpic {
-        position: relative; }
 
 .topmenu {
   text-align: center;
+  align-items: center;
+  align-content: center;
   height: 245px; }
 
-.servicedetails-section .container .servicedetails-content {
-  background-color: black; }
+.servicedetailssection .container {
+  padding-top: 100px; }
+  .servicedetailssection .container h3 {
+    color: black; }
+  .servicedetailssection .container .servicedetailscontent {
+    display: flex; }
+    .servicedetailssection .container .servicedetailscontent .servicedetailsaboutus {
+      margin-left: 285px;
+      width: 300px; }
+      .servicedetailssection .container .servicedetailscontent .servicedetailsaboutus .howcanwehelp {
+        padding-top: 20px;
+        width: 300px;
+        height: 240px;
+        text-align: center; }
+        .servicedetailssection .container .servicedetailscontent .servicedetailsaboutus .howcanwehelp h4 {
+          color: white; }
+        .servicedetailssection .container .servicedetailscontent .servicedetailsaboutus .howcanwehelp p {
+          color: white; }
+        .servicedetailssection .container .servicedetailscontent .servicedetailsaboutus .howcanwehelp .fa-envelope {
+          position: relative;
+          right: 30px; }
+        .servicedetailssection .container .servicedetailscontent .servicedetailsaboutus .howcanwehelp .inputhelp {
+          width: 265px;
+          height: 50px; }
+    .servicedetailssection .container .servicedetailscontent .servicedetailskeypoints {
+      width: 730px;
+      margin-left: 100px; }
+    .servicedetailssection .container .servicedetailscontent .finacialplan {
+      width: 730px;
+      margin-left: 100px; }
+    .servicedetailssection .container .servicedetailscontent .finacialconfidance {
+      width: 730px;
+      margin-left: 100px; }
+
+.servicedetailssection .haveaquestionform {
+  margin-left: 270px; }
+  .servicedetailssection .haveaquestionform .inputclassfirst .name1 {
+    width: 500px;
+    height: 50px; }
+  .servicedetailssection .haveaquestionform .inputclassfirst .email1 {
+    width: 500px;
+    height: 50px; }
+  .servicedetailssection .haveaquestionform .submitform1 {
+    display: grid; }
+    .servicedetailssection .haveaquestionform .submitform1 .question1 {
+      width: 1003px;
+      height: 150px;
+      margin-bottom: 30px; }
+      .servicedetailssection .haveaquestionform .submitform1 .question1 .btn-sbt {
+        width: 150px; }
 
 @media (prefers-reduced-motion: no-preference) {
   :root {

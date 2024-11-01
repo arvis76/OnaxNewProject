@@ -1,5 +1,7 @@
 ﻿.topmenu {
     text-align: center;
+    align-items:center;
+    align-content:center;
     height: 245px;
 }
 
@@ -15,6 +17,7 @@
         .aboutasidetext {
             margin-left: 60px;
             margin-right: 100px;
+            width:735px;
         }
     }
 }
@@ -29,6 +32,7 @@
 }
 .aboutusourexpertsection {
     .container {
+        margin-top: 100px;
 
         .aboutusourexpertsection-content {
             align-items: center;
@@ -42,41 +46,98 @@
                 .expert1 {
                     display: grid;
                     border: solid 1px lightgrey;
+
+                    h5 {
+                        margin-left: 10px;
+                    }
+
+                    p {
+                        margin-left: 10px;
+                    }
                 }
 
                 .expert2 {
                     display: grid;
                     border: solid 1px lightgrey;
+
+                    h5 {
+                        margin-left: 10px;
+                    }
+
+                    p {
+                        margin-left: 10px;
+                    }
                 }
 
                 .expert3 {
                     display: grid;
                     border: solid 1px lightgrey;
+
+                    h5 {
+                        margin-left: 10px;
+                    }
+
+                    p {
+                        margin-left: 10px;
+                    }
                 }
             }
 
             .aboutusourexpertsectionimages2 {
+                margin-top: 75px;
                 display: flex;
                 gap: 20px;
 
                 .expert4 {
                     display: grid;
                     border: solid 1px lightgrey;
+
+                    h5 {
+                        margin-left: 10px;
+                    }
+
+                    p {
+                        margin-left: 10px;
+                    }
                 }
 
                 .expert5 {
                     display: grid;
                     border: solid 1px lightgrey;
+
+                    h5 {
+                        margin-left: 10px;
+                    }
+
+                    p {
+                        margin-left: 10px;
+                    }
                 }
 
                 .expert6 {
                     display: grid;
                     border: solid 1px lightgrey;
+
+                    h5 {
+                        margin-left: 10px;
+                    }
+
+                    p {
+                        margin-left: 10px;
+                    }
                 }
 
                 .expert7 {
                     display: grid;
                     border: solid 1px lightgrey;
+
+                    h5 {
+                        margin-left: 10px;
+                    }
+
+                    p {
+                        margin-left: 10px;
+                    }
                 }
             }
         }

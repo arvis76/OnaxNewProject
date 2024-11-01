@@ -1,4 +1,60 @@
 ﻿.topmenu {
     text-align: center;
+    align-items: center;
+    align-content: center;
     height: 245px;
+}
+.contactpage {
+    .container {
+        .contactpage-content {
+            justify-content: center;
+            justify-items: center;
+            text-align: center;
+
+            .requstcallback {
+                border:solid 1px black;
+                position: absolute;
+                left:20%;
+                top: 170%;
+                width: 1170px;
+                height: 565px;
+                background-color: white;
+
+                .inputnewform {
+                    margin-bottom:30px;
+                    .name2 {
+                        width: 500px;
+                        height: 50px;
+                        margin-bottom: 20px;
+                    }
+
+                    .phone2 {
+                        width: 500px;
+                        height: 50px;
+                        margin-bottom: 20px;
+                    }
+
+                    .email2 {
+                        width: 500px;
+                        height: 50px;
+                        margin-bottom: 20px;
+                    }
+
+                    .email3 {
+                        border: solid 1px black;
+                        width: 500px;
+                        height: 50px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+.brands {
+    .container {
+        .brands-content{
+            margin-top:200px;
+        }
+    }
 }
