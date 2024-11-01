@@ -384,7 +384,7 @@ button {
           margin-left: 5px;
           margin-top: -25px; }
           .projectdetailsannualreport .container .asideprdetails .annaulrpt .finatxt .date-image {
-            margin-top: -30px; }
+            margin-top: -25px; }
       .projectdetailsannualreport .container .asideprdetails .bsninsigt {
         display: flex; }
         .projectdetailsannualreport .container .asideprdetails .bsninsigt .financeimage {
@@ -394,9 +394,9 @@ button {
           display: grid;
           bottom: 10px;
           margin-left: 5px;
-          margin-top: -30px; }
+          margin-top: -25px; }
           .projectdetailsannualreport .container .asideprdetails .bsninsigt .finatxt .date-image {
-            margin-top: -30px; }
+            margin-top: -25px; }
       .projectdetailsannualreport .container .asideprdetails .finceadv {
         display: flex; }
         .projectdetailsannualreport .container .asideprdetails .finceadv .financeimage {
@@ -405,9 +405,9 @@ button {
         .projectdetailsannualreport .container .asideprdetails .finceadv .finatxt {
           display: grid;
           margin-left: 5px;
-          margin-top: -30px; }
+          margin-top: -25px; }
           .projectdetailsannualreport .container .asideprdetails .finceadv .finatxt .date-image {
-            margin-top: -30px; }
+            margin-top: -25px; }
       .projectdetailsannualreport .container .asideprdetails .bdgplan {
         display: flex; }
         .projectdetailsannualreport .container .asideprdetails .bdgplan .financeimage {
